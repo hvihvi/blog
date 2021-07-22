@@ -28,3 +28,7 @@ Add css hidden text next to SVGs:
   <span class="visually-hidden">Help</span>
 </button>
 ```
+
+## Font SVG vs Inline SVG
+
+Inline SVGs are better for performance and accessibility, avoid font svgs.
