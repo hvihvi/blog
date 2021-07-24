@@ -1,0 +1,103 @@
+---
+title: Sticky
+date: 2021/7/24
+description: Collection of sticky tricks
+tag: web development
+author: You
+---
+
+# Sticky
+
+## Cool side navigation effect
+
+Side navigation sticky trick from the https://css-for-js.dev/ course:
+
+```css
+section h2 {
+  position: sticky;
+  top: 0;
+}
+
+section {
+  display: flex;
+  align-items: flex-start;
+  padding: 8px 0px;
+}
+
+section p {
+  flex: 1;
+  margin-left: 32px;
+}
+
+section:last-of-type {
+  margin-bottom: 100vh;
+}
+```
+
+<section
+  style={{
+    display: 'flex',
+    alignItems: 'flex-start',
+    padding: '8px 0px',
+    margin: '0'
+  }}
+>
+  <div style={{ position: 'sticky', top: '0', margin: '0', padding: '0' }}>
+    Section 1
+  </div>
+  <p style={{ flex: '1', margin: '0', padding: '0', marginLeft: '32px' }}>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum
+    scelerisque elit in convallis. Lorem ipsum dolor sit amet, consectetur
+    adipiscing elit. Quisque elementum scelerisque elit in convallis.
+  </p>
+</section>
+<section
+  style={{
+    display: 'flex',
+    alignItems: 'flex-start',
+    padding: '8px 0px',
+    margin: '0'
+  }}
+>
+  <div style={{ position: 'sticky', top: '0', margin: '0', padding: '0' }}>
+    Section 2
+  </div>
+  <p style={{ flex: '1', margin: '0', padding: '0', marginLeft: '32px' }}>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum
+    scelerisque elit in convallis. Lorem ipsum dolor sit amet, consectetur
+    adipiscing elit. Quisque elementum scelerisque elit in convallis. Lorem
+    ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum
+    scelerisque elit in convallis.
+  </p>
+</section>
+<section
+  style={{
+    display: 'flex',
+    alignItems: 'flex-start',
+    padding: '8px 0px',
+    margin: '0',
+    marginBottom: '100vh'
+  }}
+>
+  <div
+    style={{
+      position: 'sticky',
+      top: '0',
+      margin: '0',
+      padding: '0'
+    }}
+  >
+    Section 3
+  </div>
+  <p
+    style={{
+      flex: '1',
+      margin: '0',
+      padding: '0',
+      marginLeft: '32px'
+    }}
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum
+    scelerisque elit in convallis.
+  </p>
+</section>

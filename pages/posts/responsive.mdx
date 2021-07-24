@@ -1,0 +1,40 @@
+---
+title: Responsive
+date: 2021/7/24
+description: Collection of responsive tricks
+tag: web development
+author: You
+---
+
+# Responsive
+
+## Media queries
+
+Pixels are no longer exact values in modern devices, `@media (min-width: 551px)` coupled with `@media (max-width: 550px)` might create bugs at 550.5px resolutions.  
+We can use `@media (min-width: 550.01px)` to work our way around this issue.
+
+## Clamp values
+
+Clamp values set min/ideal/max values, for example with width for a card:
+
+```css
+.card {
+  width: clamp(500px, 65%, 800px);
+  max-width: 100%;
+}
+```
+
+<div
+  style={{
+    width: 'clamp(500px, 65%, 800px)',
+    maxWidth: '100%',
+    borderRadius: '4px',
+    border: '1px solid #e2e8f0',
+    padding: '24px',
+    margin: '0 auto'
+  }}
+>
+  This card takes at least 500px if the content is very short. It tries to have
+  a width of 65%, but on very large screens stops at 800px. On very small
+  screens it falls back to 100% width.
+</div>
