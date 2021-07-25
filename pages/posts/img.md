@@ -1,7 +1,7 @@
 ---
 title: Images
 date: 2021/7/22
-description: Memo for image related
+description: Anything image related
 tag: web development
 author: You
 ---

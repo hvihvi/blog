@@ -1,7 +1,7 @@
 ---
-title: Text
+title: Text and Fonts
 date: 2021/7/22
-description: Memo for anything related to texts and fonts
+description: Notes related to texts and fonts, UX, performance, css tricks...
 tag: web development
 author: You
 ---

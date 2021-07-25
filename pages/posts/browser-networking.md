@@ -55,3 +55,48 @@ It is possible to tell the browser to open a connexion early, or even start pre-
 
 Use `Cache-Control` header (max-age), `Last-Modified` and `ETag` provide validation mechanism.
 Reseaches (2012) have found that about 19% of HTTP traffic are redundant transfert.
+
+## CORS
+
+For simple requests, no cookies or http authentication:
+
+```text
+=> Request
+GET /resource.js HTTP/1.1
+Host: thirdparty.com
+Origin: http://example.com (1)
+...
+
+<= Response
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: http://example.com (2)
+...
+```
+
+1 - Origin header is automatically set by the browser.  
+2 - Opt-in header is set by the server.
+
+For more cross-origin authorisations, the browser must send a preflight request:
+
+```text
+=> Preflight request
+OPTIONS /resource.js HTTP/1.1 (1)
+Host: thirdparty.com
+Origin: http://example.com
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: My-Custom-Header
+...
+
+<= Preflight response
+HTTP/1.1 200 OK (2)
+Access-Control-Allow-Origin: http://example.com
+Access-Control-Allow-Methods: GET, POST, PUT
+Access-Control-Allow-Headers: My-Custom-Header
+...
+
+(actual HTTP request) (3)
+```
+
+1 - Preflight OPTIONS request to verify permissions
+2 - Successful preflight response from third-party origin
+3 - Actual CORS request

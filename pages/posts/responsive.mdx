@@ -38,3 +38,22 @@ Clamp values set min/ideal/max values, for example with width for a card:
   a width of 65%, but on very large screens stops at 800px. On very small
   screens it falls back to 100% width.
 </div>
+
+## Hide/Show
+
+Use `display: none` with media queries to remove from the DOM.  
+This is a better choice for React SSR (ex: Next.js), compared to JS alternatives, to get the right version on first render and not wait for hydration.
+
+```css
+.desktop-only {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .desktop-only {
+    display: block;
+  }
+  .desktop-only {
+    display: none;
+  }
+}
+```
