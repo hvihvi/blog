@@ -34,10 +34,11 @@ Simon Peyton Jones https://www.youtube.com/watch?v=iSmkqocn0oQ
 
 > State is the root of all evil. In particular functions with side effects should be avoided.
 
-Terminology:
+### Terminology
 
-- Pure functions: No side effects, predictable, the same input always returns the same output
-- First-class functions: when functions in a language are treated like any other variables
-- Side-effects: mutations, I/O...
-- Memoïsation: if a function is predictable, the input<->output map can be cached
-- Currying: f(a, b) becomes f(a)(b), favors reuse of partial functions
+- **Pure functions**: No side effects, predictable, the same input always returns the same output
+- **First-class functions**: when functions in a language are treated like any other variables
+- **Mutations**: change the value assigned to a variable, setters, change an object/array...
+- **Side-effects**: mutations, I/O...
+- **Memoïsation**: if a function is predictable, the input-output map can be cached
+- **Currying**: f(a, b) becomes f(a)(b), favors reuse of partial functions
