@@ -1,30 +1,71 @@
 ---
-title: Drive by Daniel Pink
-date: 2021/7/27
-description: Notes from the "Drive" by D. Pink book
+title: Kaizen
+date: 2021/7/24
+description: Notes from the "Toyota Kaizen Methods" book by Isao Kato, and Kaizen related
 tag: web development
 author: You
 ---
 
-# Drive - The surprising truth about what motivates us
+# Kaizen
 
-This book uses social experiments to understand how motivation works.
+## 6 steps (loop)
 
-## Mastery - Autonomy - Purpose
+1)Discover Improvement Potential
+2)Analyze Current Methods
+3)Generate Original Ideas
+4)Develop implementation plan
+5)implement
+6)Evaluation new Methods
 
-3 keys to motivation:
+Note : (4) should be left out and become "just do it" most of the time.
 
-- Mastery
-- Autonomy
-- Purpose
+### Discover Improvement Potential
 
-## Flaws of carrot and stick
+7 types of waste :
 
-Most preconceived motivation factors such as "Carrot & stick" no longer work when we are past the survival threshold.
+- Overproduction (too much or too soon)
+- Excess Motion (any motion that doesnt add value)
+- Scrap & Rework (any repair, scrap, or rework)
+- Overprocessing (overprocessing beyond requirement)
+- Conveyance (Any nonessential transport beyond minimum required)
+- Excess Inventory (Any more than the minimum required)
+- Excess Wait Time (Waiting on parts or waiting for a machine to finish etc)
 
-If-then rewards have a negative effect. They narrow our focus (ex: candle problem).
-Ex: Paying blood donors decreased their numbers in half.
+### Analyze
 
-They encourage cheating, shortcuts and unethical behaviour and short-term thinking.
+Ex: breakdown sheets, note time, action, comment and ideas while performing a task or watching someone.
 
-Instead, give rewards or praises / positive feedbacks after the task is complete.
+### Idea generation
+
+Creativity killers:
+
+- Force of habit : resistance & fear of change
+- Preconceptions : predict the outcome, often based on outdated data
+- Common Sense : for example with kanban we can achieve more tasks with less effort, which is counter intuitive
+- Not Invented Here Syndrome : the need to find a homemade solution
+- Emotion : negative thinking, fear of change...
+
+Creativity Advices:
+
+- Separate Idea Generation and Judgment : to prevent killing an idea early
+- Quantity over quality
+- Think outside the box, from different perspective
+- Combine ideas with others
+- Review previous Analysis
+- Synthesis Ideas
+
+Brainstorming Rules :
+
+- No criticizing or judgment during idea generation
+- Speak freely
+- Seek quantity
+- Think together
+
+### Planification and implementation
+
+In most case, just do it.
+
+### Evaluate the new method
+
+Ensure an actual improvement happened, compare before/after, preferably with data.
+Do a presentation/showcase to co-workers with Q&A session.
