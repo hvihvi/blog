@@ -1,0 +1,15 @@
+---
+title: CSS Carousel
+date: 2021/7/27
+description: Fix carousel performances via CSS
+tag: web development
+author: You
+---
+
+# CSS Carousel
+
+Our landing page's performance was highly affected by a Javascript carousel library (that used jQuery).  
+Its cost measured by lighthouse was about 20 performance points.
+
+It is possible to reproduce a "JS free" carousel effect via `overflow: scroll` and hide the scroll bar.  
+Then use `scroll-snap-type: x mandatory` to get the spring snap effect: https://developer.mozilla.org/fr/docs/Web/CSS/scroll-snap-type.
