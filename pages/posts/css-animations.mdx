@@ -1,0 +1,118 @@
+---
+title: CSS Animations
+date: 2021/8/09
+description: Anything related to CSS transform, transitions and animations...
+tag: web development
+author: You
+---
+
+# CSS Animations
+
+## transform
+
+With transform, `%` are based on the element's size, `transform: translateX(calc(100% + 1px))` translates right by exactly its size + 1px.
+
+### Trick to place à close button above a card:
+
+```css
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-100%);
+}
+```
+
+It avoid messing with the card placement, place the button inside the card, place it `absolute` on the top right, and translate to place it above the card.
+
+## transitions
+
+Website with various transition animations https://easings.net/
+
+### js free hover navigation menus
+
+A common issue is to hover a menu item, a list appears, and the mouse loses hover when trying to reach the list, making the menu hard to navigate.
+
+With `transition-delay`, it is possible to make the dropdown last a bit longer.
+
+```css
+.menu-list {
+  opacity: 0;
+  transition: opacity 400ms;
+  transition-delay: 300ms;
+}
+.menu-item:hover .menu-list {
+  opacity: 1;
+  transition: opacity 100ms;
+  transition-delay: 0ms;
+}
+```
+
+### flicker hover glitch
+
+If a button moves up on hover, it is no longer hovered, then it comes back down, gets hovered, goes up... It flickers.
+
+To solve this issue, we can use an inner element inside our button, that way the button's size increases when the inner element moves up and the glitch doesn't happen.
+
+## Animations
+
+### pure CSS spinner (infinite rotation)
+
+```css
+<style>
+  @keyframes spin {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+      transform: rotate(1turn);
+    }
+  }
+
+  .svg-spinner {
+    animation: spin 1000ms linear infinite;
+  }
+</style>
+
+```
+
+### grow and shrink
+
+Use `%` instead of `from` and `to` and go back to initial state.
+
+```css
+<style>
+  @keyframes grow-and-shrink {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .item {
+    animation: grow-and-shrink 300ms;
+  }
+</style>
+```
+
+This can also be performed via `animation-direction: alternate` (or add `alternate` to the animation shorthand), which goes over the animation 0% to 100% and then backward from 100% to 0%.
+
+### keep start and end styles with `both`
+
+When entering or exiting an animation it goes back to the element's unanimated styles. Use `animation: ... both` to keep initial and final styles from the animation.
+
+### CPU to GPU glitch
+
+Sometimes start and end of the animation have minor glitches because CPU hands over to the GPU to do the work and they render a bit differently.
+You can hint the browser to avoid this.
+
+```css
+.subject {
+  will-change: transform;
+}
+```
