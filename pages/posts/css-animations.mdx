@@ -8,6 +8,30 @@ author: You
 
 # CSS Animations
 
+## Accessibility
+
+Use media queries to remove animations for people who suffer from motion sickness and wish to disable animations.
+
+Apply only when no preferences set (default):
+
+```css
+@media (prefers-reduced-motion: no-preference) {
+  .animated {
+    transition: transform 300ms;
+  }
+}
+```
+
+Or override to disable it:
+
+```css
+@media (prefers-reduced-motion: reduce) {
+  .animated {
+    transition: none;
+  }
+}
+```
+
 ## transform
 
 With transform, `%` are based on the element's size, `transform: translateX(calc(100% + 1px))` translates right by exactly its size + 1px.
