@@ -32,6 +32,14 @@ Or override to disable it:
 }
 ```
 
+It can be checked with JS as well:
+
+```js
+const prefersReducedMotion = !window.matchMedia(
+  '(prefers-reduced-motion: no-preference)'
+).matches
+```
+
 ## transform
 
 With transform, `%` are based on the element's size, `transform: translateX(calc(100% + 1px))` translates right by exactly its size + 1px.
