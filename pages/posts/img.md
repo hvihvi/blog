@@ -30,6 +30,12 @@ Add webp support with fallbacks via `picture tag`:
 </picture>
 ```
 
+Generate image with webp format via the CLI:
+
+```sh
+cwebp -q 80 initial_image.png -o output_image.webp
+```
+
 #### LCP
 
 Check if an image is the LCP in devtools with the Lighthouse plugin or Performance tab.  
