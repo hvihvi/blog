@@ -24,7 +24,7 @@ it('will wait for state updates and check DOM content', () => {
 
 #### debug
 
-````js
+```js
 it('will print the DOM in the console', () => {
   const { debug } = render(<Component />)
   debug() // prints DOM in the console
@@ -41,7 +41,7 @@ it('will print the DOM in the console', () => {
 beforeEach(() => {
   jest.clearAllMocks()
 })
-````
+```
 
 #### Mock API requests
 
