@@ -29,6 +29,7 @@ it('will print the DOM in the console', () => {
   const { debug } = render(<Component />)
   debug() // prints DOM in the console
 })
+```
 
 # Jest
 
