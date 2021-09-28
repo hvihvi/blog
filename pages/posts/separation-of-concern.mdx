@@ -1,0 +1,63 @@
+---
+title: Separation of Concerns
+date: 2021/9/23
+description: Resources related to "separation of concerns", with nuance...
+tag: web development
+author: You
+---
+
+import Image from 'next/image'
+
+# Separation of Concerns
+
+The point of this article is to provide pointers to nuance **Separation of Concerns** used as a stand-alone argument in technical debates.
+
+We should be open to different perspectives and weight pros & cons. This was a hot topic in the early days of **CSS-in-JS** and a valuable lesson.
+
+To illustrate this point, this image shows how the **component abstraction** doesn't go against **separation of concerns**, but sees it from a different perspective:
+
+<Image
+  src="/images/separation-of-concern_component.jpeg"
+  alt="Hello"
+  width={1024}
+  height={768}
+/>
+
+This point of view can be applied to different subjects.
+
+<Image
+  src="/images/separation-of-concern_db.jpeg"
+  alt="Hello"
+  width={1024}
+  height={768}
+/>
+
+The trend seems to be a shift from historical "technical" separation to "business logic" separation. The idea behind this is that parts that change together should live together.
+
+## Examples with pros & cons
+
+#### CSS/HTML/JS vs component
+
+CSS-in-JS and JSX blend different languages together (historically segregated), they separate "components" instead.
+
+#### Redux, ducks, slices
+
+Redux uses a FP separation of effects and pure logic.
+
+In the early days of Redux, there was a strong separation between application state and components, reducers and actions had a dedicated folder at the root of the app, stateless components lived far from state-wrapped ones (presentation/container)... It was mostly technical separation of concerns.
+
+React hooks pushed in the opposite direction and brought states and components back together.
+
+With modern Redux, the separation between states and components is more subtle, states live closer to components, they are still segregated but they are related by business domain concerns and not technical ones.
+
+#### No Test folder
+
+In the Java ecosystem, tests were historically placed in a different folder in a parallel universe.
+
+The Javascript or Go ecosystem decided to place tests right next to their subject, this makes navigation easier and watching files in a folder gives you a quick feedback when something is not tested.
+
+Maybe the next step is to have tests in the same file as its subject?
+
+#### Micro-services
+
+My take-away from the book **Building Microservices: Designing Fine-Grained Systems** was that when applying a hard separation between services like a HTTP layer, the commit/deployement life is much easier when they are segregated so that parts that change together live together, which is often achieved by modeling through business domain concerns.
