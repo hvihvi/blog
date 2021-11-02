@@ -8,10 +8,10 @@ author: You
 
 # ADR (Architecture Decision Record)
 
-A document (ex: markdown + git) that tracks decisions.
+A document (ex: markdown + git) that tracks decisions. Lives with the code.
 A "decision" folder makes more sense than "ADR".
 
-For visibility reference them in commit messages, README.md, comments...
+For visibility, reference in commit messages, README.md, comments...
 
 Things worth mentioning:
 
