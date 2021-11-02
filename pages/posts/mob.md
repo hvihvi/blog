@@ -24,7 +24,7 @@ All the team working on the same thing.
 
 ## "How can you be productive with 5 people at one computer?"
 
-Productivity = Getting things done
+Productivity = Getting things done  
 Effectiveness = Getting the right things done
 
 Reduce "Question Queue Time", the amount of time one must wait to get an answer to a blocking question.
