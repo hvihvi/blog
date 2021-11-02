@@ -24,6 +24,17 @@ it("should...", () => {
 });
 ```
 
+### Customize mocks with jest-when
+
+This is a dsl library to help a bit with jest mocks.
+It might be confusing to use "when" in a "given" statement.
+
+```js
+import { when } from "jest-when";
+
+when(myMock).calledWith("input").mockResolvedValue(mockSomething);
+```
+
 ## Localhost mock flags / feature flags
 
 To setup quick flags, we can use url parameters, and return a mocked implementation:
