@@ -41,7 +41,8 @@ As a group, the right things get done faster, the wrong things fade away.
 
 ## Psychological safety
 
-**Project Aristle** is a research from Google (over 180+ teams) that found that **psychological safety** was the most notable factor to their team's success, as well as what is pointed in the Drive book (autonomy, meaning, impact...).
+**Project Aristle** is a research from Google (over 180+ teams) that points **psychological safety** as the most notable factor to their team's success, and confirms what's in the Drive book (autonomy, meaning, impact...).
 
-In a **Mob Programming** group, people need to feel safe leaving/joining whenever they feel like they need time to thing or work alone for a bit.  
-This includes feeling safe experimenting, exploring, discovery...
+In a **Mob Programming** group, people need to feel safe leaving/joining whenever they feel like they need time to think or work alone for a bit.  
+This includes feeling safe experimenting, exploring, discovery, asking...
+NASA devs create an environement where it is ok to not know something and ask, to minimise errors.
