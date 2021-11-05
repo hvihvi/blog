@@ -1,0 +1,105 @@
+---
+title: Layout Components
+date: 2021/11/05
+description: Stacks, Boxes...
+tag: web development
+author: You
+---
+
+# Layout Components
+
+Layout components are an abstraction on top of CSS.
+
+Made popular by Mark Dalgleish's talk https://www.youtube.com/watch?v=jnV1u67_yVg on Braid's design-system https://seek-oss.github.io/braid-design-system/components/Stack/.
+
+Article on the subject by styled-component's creator https://mxstbr.com/thoughts/margin
+
+At LesFurets, we were able to build a complete app without a single line of css.
+CSS was only used in design-system components, which included a Box and a a Stack component for layout.
+
+**Pros:**
+- Share a common language with UX designers
+- Ease of use (more so for devs uncomfortable with css)
+- Use React composition
+- Better encapsulation
+
+**Cons:**
+- Not as flexible as CSS to face high layout complexity
+- hard to overcome unecessary divs in the DOM
+- "responsive-in-JS" can be a bit verbose
+
+## Box
+
+An abstraction that represents space around a component. (Our UX designers use the word "spacing" so we went with it, but it's just padding)
+
+```jsx
+<Box horizontalSpacing="4px">
+  <Child/>
+</Box>
+
+<Box spacingTop="2px" spacingLeft="10px">
+  <Child/>
+</Box>
+```
+
+Those `"2px"` declarations can be replaced with `const`s or a TS enum
+
+## Stack
+
+An abstraction that stacks components in a line or a pile.
+
+Could use `/*prettier-ignore*/` for a visual code representation:
+
+```jsx
+<Stack column>
+   <Child1/>
+   <Child2/>
+   <Child3/>
+</Stack>
+
+{/* prettier-ignore */}
+<Stack line gap="2px"><Child1/><Child2/><Child3/></Stack>
+```
+
+Making the bundler translate indentation to line/column might be an idea to explore...
+
+## Responsive in JS
+
+```js
+import { useState, useEffect } from 'react';
+
+export function useMediaQuery(query) {
+  const [matches, setMatches] = useState(false);
+
+  useEffect(() => {
+    const media = window.matchMedia(query);
+    if (media.matches !== matches) {
+      setMatches(media.matches);
+    }
+    const listener = () => {
+      setMatches(media.matches);
+    };
+    media.addListener(listener);
+    return () => media.removeListener(listener);
+  }, [matches, query]);
+
+  return matches;
+}
+
+function Page() {
+  let isPageWide = useMediaQuery('(min-width: 800px)')
+	
+	return <>
+    {isPageWide && <UnnecessarySidebar />}
+    <ImportantContent />
+  </>
+}
+```
+
+Credits: https://www.netlify.com/blog/2020/12/05/building-a-custom-react-media-query-hook-for-more-responsive-apps/
+
+We abstract on top of this to match UX designer's language and their breakpoints:
+
+```js
+const {isMobile, isTablet, isDesktop} = useResponsive();
+```
