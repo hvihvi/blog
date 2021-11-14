@@ -28,3 +28,20 @@ Ex: Paying blood donors decreased their numbers in half.
 They encourage cheating, shortcuts and unethical behaviour and short-term thinking.
 
 Instead, give rewards or praises / positive feedbacks after the task is complete.
+
+## Experiments & Examples
+
+## Candle experiment
+
+The experiment gives participants a candle, a box of thumbtacks, and a book of matches, and asks them to attach the candle to the wall so that it doesn't drip onto the table below.
+Participants that were **"incentivised"** by money rewards were **3min30 slower**.
+
+Creativity is killed by Carrot & stick (extrinsic motivators). It does work for more simple & mechanical tasks.
+
+### Microsoft Encarta vs Wikipedia
+
+Encarta was build by well paid contributers and managers, but was overtaken by Wikipedia.
+
+### Blood donor experiment
+
+When paid to give blood, donations drop from 53% to 30% of tested subjects.
