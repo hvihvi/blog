@@ -1,0 +1,63 @@
+---
+title: Debounce input
+date: 2021/11/15
+description: Fetch as you type non-render blocking...
+tag: web development
+author: You
+---
+
+# Debounce input
+
+If we fetch as we type in an input, the input's controlled state waits for the fetch, it's bad UX.
+
+Example of controlled input, the input's state is out and `onChange` & `value` control it:
+
+```tsx
+const App = () => {
+  const [searchTerm, setSearchTerm] = useState('')
+  const { searchResult, loading } = useSearchResult(searchTerm)
+  return (
+    <main>
+      <ProductContainer>
+        {loading ? <Loading /> : <Results searchResult={searchResult} />}
+      </ProductContainer>
+      <BottomContainer>
+        <TextInput
+          id="searchProduct"
+          onChange={(e) => setSearchTerm(e.target.value)}
+          value={searchTerm}
+          label="Rechercher un produit 🔎"
+        />
+      </BottomContainer>
+    </main>
+  )
+}
+```
+
+To work our way around this, we can first not send a request when the number of typed characters is irrelevant (3 in this example).
+
+And then, use `setTimeout` and `clearTimeout` to "kill" request that are no longer relevant as the user kept typing.
+In this example, if the user types a 3rd character, a request will be sent in 500ms.
+But if he types another character within 500ms, the request (callback function) won't be sent, and instead another one will, with the new search.
+
+```ts
+export const useSearchResult = (searchTerm: string) => {
+  const [searchResult, setSearchResult] = useState<SearchApiResponse>()
+  const [loading, setLoading] = useState<boolean>(false)
+  useEffect(() => {
+    if (searchTerm.length < 3) return
+    // delay/cleanup to not fetch when the user is still typing
+    const timeoutId = setTimeout(() => {
+      setLoading(true)
+      fetchSearch(searchTerm)
+        .then((result) => setSearchResult(result))
+        .then(() => setLoading(false))
+        .catch((e) => console.log(e)) // TODO handle errors
+    }, 500)
+    return () => clearTimeout(timeoutId)
+  }, [searchTerm])
+  return { searchResult, loading }
+}
+```
+
+We can go a step further and abort unanswered requests via `AbortController`: https://dom.spec.whatwg.org/#aborting-ongoing-activities
