@@ -36,7 +36,7 @@ const App = () => {
 
 To work our way around this, we can first not send a request when the number of typed characters is irrelevant (3 in this example).
 
-And then, use `setTimeout` and `clearTimeout` to "kill" request that are no longer relevant as the user kept typing.
+And then, use `setTimeout` and `clearTimeout` to not send requests that are no longer relevant as the user kept typing.
 In this example, if the user types a 3rd character, a request will be sent in 500ms.
 But if he types another character within 500ms, the request (callback function) won't be sent, and instead another one will, with the new search.
 
@@ -60,4 +60,4 @@ export const useSearchResult = (searchTerm: string) => {
 }
 ```
 
-We can go a step further and abort unanswered requests via `AbortController`: https://dom.spec.whatwg.org/#aborting-ongoing-activities
+We can go a step further and abort unanswered requests as the user keeps typing via `AbortController`: https://dom.spec.whatwg.org/#aborting-ongoing-activities
