@@ -68,13 +68,13 @@ Orthogonal to motivation :
 - high psychological-safety / low motivation : comfort zone
 - high psychological-safety / high motivation : learning zone :stonks:
 
-## Workflow / Setup
+## Workflow / Setup (personal preferences)
 
-Extreme programming style with **timers** and quick switches can create a stressful environment. I find it best to ask every 2h/half-day "want me to pick up the keyboard?", or ask if "anyone wants to take over?" when I'm tired.
+Extreme programming style with **timers** and quick switches can create a stressful environment (harms psychological safety & motivation). I find it best to ask every 2h/half-day "want me to pick up the keyboard?", or ask if "anyone wants to take over?" when I'm tired.
 
 Coding on someone else's keyboard/IDE can be a painful experience. **Remote working with a shared screen** is perfect for mob programming, everyone can focus on the driver's screen and help him navigate.
 
-Slack's drawing feature or Gather's dot feature facilitate communication on the shared screen to draw attention.
+Slack's **drawing feature** or Gather's **dot feature** displayed on the streamer's screen facilitate communication on the shared screen to draw attention.
 
 **Trunk based development** fits mob programming perfectly. Merge per commit into the `main` branch as soon as a commit is valid, **no merge requests** needed (can be used for validation pipelines), code reviews and manual tests are done live.
 
@@ -86,14 +86,14 @@ Kanban creates **wait times** and try to make them visible. Any issue that isn't
 
 Daily **stand-up meetings** are much shorter.
 
-Scrum Poker planings are **prematurate work**. If the mob includes a PO/PM this work is done on the fly, when we start working on it.
+Scrum Poker planings are **prematurate work**. Heavy ticket specifications as well. If the mob includes a PO/PM most this work is done on the fly, when we start working on it.
 The result is of higher quality as it benefits from the same "brain to brain" effort and question/dialog takes place, just like it does for code.
 
 A lot of **rework** in scrum/kanban come from misunderstandings between devs and PO/PMs.
 If devs don't have to wait for a PO/PM to get feedback, a lot of time is saved.
 
-No parallel branches and no long lived branches = no conflicts.
+No parallel branches and no long lived branches = **no conflicts**.
 
-No need for shared "staging" environments.
+No need for shared "staging" environments in the team.
 
 No **context-switching** (or reduced). If you forget what you were doing due to a context-switch, the group is more likely to get back on track quickly than a single individual. Someone in the group can get ready for the next task and pick up the keyboard/screen-share as soon as the previous task ends.
