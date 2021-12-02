@@ -38,6 +38,6 @@ it('should...', () => {
 
 For example
 
-> GIVEN any array of numbers, WHEN `sort` is called, THEN the output array has the same lenght
+> GIVEN any array of numbers, WHEN `sort` is called, THEN the output array has the same length
 
 The framework generates a large number of inputs and checks the output for given condition.
