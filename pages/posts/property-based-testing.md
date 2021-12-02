@@ -12,7 +12,7 @@ Introduced in Haskell via the QuickCheck framework.
 
 JS/TS library : `yarn add fast-check -dev`
 
-Difference between typical test by example:
+Difference with typical test by example:
 
 ```js
 // test by example
