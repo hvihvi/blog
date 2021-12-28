@@ -9,3 +9,4 @@ author: You
 # Remote working
 
 Pokemon style remote workplaces: https://www.gather.town/
+Draw schema: https://excalidraw.com/
