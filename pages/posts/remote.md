@@ -10,3 +10,5 @@ author: You
 
 Pokemon style remote workplaces: https://www.gather.town/
 Draw schema: https://excalidraw.com/
+Retro: https://metroretro.io/
+Whiteboards: https://miro.com/
