@@ -66,4 +66,32 @@ Seen as a resources, limited and needs time to recover.
 ### Decision making
 
 Obama, Bill Gates, Steve Jobs (...) all dress the same way every day. One less decision to make, leaving more resources for decisions that matter.
+
+## Learning with the slip-box
+
+> Not learning from what we read because we don't take the time to elaborate on it is the real waste of time
+
+The slip-box is here to take care of details and references, that way the brain can focus on what matters, the big picture, deeper understanding, creativity...
+
+## From Brainstorming to "slip-box'storming"
+
+Brainstorming sounds trendy, but it has many flaws and biais.
+The lack of tools means we rely on the brain, and produce ideas that are easily accessible for the brain, connected to emotions and miss out a lot.
+It is unlikely to find ideas in a few minutes, compared to months of filling a slip-box.
+
+## Give up planning
+
+An experiment by 3 psychologists asked a group for 3 estimations. Ideal, realistic and worst case scenario.
+The result shows that ideal and realistic were very close, which hints our inability to plan. And not even half managed to finish in time for the planned worst case scenario.
+More experiments shows experience doesn't seem to help. Even people who know about the overconfidence biais fall for it.
+The law of Parkinson states that we tend to fill the time we set for a task, so overestimating doesn't work.
+
+(RIP scrum)
+
+The most important step is to get started, and it is much easier on small tasks, when the finish line is in sight. Ex: Writting a note vs writting a book.
+
+## The power of habits
+
+It is much easier to do something we have done before.
+Ex: if we intent to go to the gym, it is much easier the 2nd time.
  
