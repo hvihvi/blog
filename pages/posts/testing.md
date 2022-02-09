@@ -2,7 +2,7 @@
 title: Jest & Testing Library
 date: 2021/7/25
 description: A memo for Jest & testing library...
-tag: web development
+tag: web development, testing, react
 author: You
 ---
 

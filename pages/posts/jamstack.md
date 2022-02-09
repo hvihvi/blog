@@ -2,7 +2,7 @@
 title: JAM Stack
 date: 2021/7/26
 description: Anything related to the JAM stack
-tag: web development
+tag: web development, architecture, web performances
 author: You
 ---
 

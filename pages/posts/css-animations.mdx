@@ -2,7 +2,7 @@
 title: CSS Animations
 date: 2021/8/09
 description: Anything related to CSS transform, transitions and animations...
-tag: web development
+tag: web development, css, a11y, user experience, design
 author: You
 ---
 
@@ -10,9 +10,9 @@ author: You
 
 ## Accessibility
 
-Use media queries to remove animations for people who suffer from motion sickness and wish to disable animations.
+Remove animations for people who suffer from motion sickness.
 
-Apply only when no preferences set (default):
+Apply when no preferences set (default):
 
 ```css
 @media (prefers-reduced-motion: no-preference) {
@@ -22,7 +22,7 @@ Apply only when no preferences set (default):
 }
 ```
 
-Or override to disable it:
+Or override:
 
 ```css
 @media (prefers-reduced-motion: reduce) {
@@ -32,7 +32,7 @@ Or override to disable it:
 }
 ```
 
-It can be checked with JS as well:
+Or with JS:
 
 ```js
 const prefersReducedMotion = !window.matchMedia(
@@ -55,7 +55,8 @@ With transform, `%` are based on the element's size, `transform: translateX(calc
 }
 ```
 
-It avoid messing with the card placement, place the button inside the card, place it `absolute` on the top right, and translate to place it above the card.
+It avoids messing with the card placement.
+Place it top right, and translate it above the card.
 
 ## transitions
 
@@ -63,9 +64,14 @@ Website with various transition animations https://easings.net/
 
 ### js free hover navigation menus
 
-A common issue is to hover a menu item, a list appears, and the mouse loses hover when trying to reach the list, making the menu hard to navigate.
+A common issue is to:
 
-With `transition-delay`, it is possible to make the dropdown last a bit longer.
+1. hover a menu item
+2. a list appears
+3. the mouse loses hover when trying to reach the list
+4. the list disapears before we can reach the item 🥲
+
+**Fix:** Use `transition-delay`, to make the dropdown last a bit longer.
 
 ```css
 .menu-list {
@@ -82,9 +88,14 @@ With `transition-delay`, it is possible to make the dropdown last a bit longer.
 
 ### flicker hover glitch
 
-If a button moves up on hover, it is no longer hovered, then it comes back down, gets hovered, goes up... It flickers.
+1. a button moves up on hover
+2. it is no longer hovered
+3. it comes back down
+4. gets hovered
+5. goes up
+6. ... it flickers
 
-To solve this issue, we can use an inner element inside our button, that way the button's size increases when the inner element moves up and the glitch doesn't happen.
+**Fix:** Use an inner element inside our button -> the button's size increases when the inner element moves up and the glitch doesn't happen.
 
 ## Animations
 

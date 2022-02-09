@@ -2,7 +2,7 @@
 title: Full width wrapper
 date: 2021/8/23
 description: CSS hack for a full width inside a layout with gutter
-tag: web development
+tag: web development, css
 author: You
 ---
 

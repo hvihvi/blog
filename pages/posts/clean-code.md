@@ -2,7 +2,7 @@
 title: Clean code
 date: 2021/7/25
 description: Resources and articles with coding practice
-tag: web development
+tag: web development, developer experience, code quality, functional programming
 author: You
 ---
 

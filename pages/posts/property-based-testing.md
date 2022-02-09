@@ -2,7 +2,7 @@
 title: Property Based Testing
 date: 2021/11/21
 description: A functional testing strategy...
-tag: web development
+tag: web development, testing, functional programming
 author: You
 ---
 

@@ -2,7 +2,7 @@
 title: Mob Programming
 date: 2021/11/02
 description: About mob programming, psychological safety...
-tag: web development
+tag: productivity, management, motivation, learning
 author: You
 ---
 

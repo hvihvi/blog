@@ -2,7 +2,7 @@
 title: Solving the Set game
 date: 2021/12/21
 description: An interesting coding exercise
-tag: web development
+tag: web development, functional programming, code quality, testing
 author: You
 ---
 

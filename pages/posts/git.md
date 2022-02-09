@@ -2,7 +2,7 @@
 title: Git
 date: 2021/7/27
 description: Git related
-tag: web development
+tag: web development, tooling, code quality
 author: You
 ---
 

@@ -2,7 +2,7 @@
 title: How to take smart notes by Sönke Ahrens
 date: 2022/02/05
 description: Notes from the book...
-tag: web development
+tag: productivity, motivation, management, learning, book
 author: You
 ---
 
@@ -94,4 +94,3 @@ The most important step is to get started, and it is much easier on small tasks,
 
 It is much easier to do something we have done before.
 Ex: if we intent to go to the gym, it is much easier the 2nd time.
- 

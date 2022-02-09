@@ -2,7 +2,7 @@
 title: CLI
 date: 2021/11/14
 description: Utilities, mac setup etc
-tag: web development
+tag: web development, tooling
 author: You
 ---
 

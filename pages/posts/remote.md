@@ -2,7 +2,7 @@
 title: Remote wroking
 date: 2021/7/27
 description: Tools for remote work
-tag: web development
+tag: productivity, tooling, motivation
 author: You
 ---
 

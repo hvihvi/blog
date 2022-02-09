@@ -2,7 +2,7 @@
 title: React Context vs Redux
 date: 2021/12/05
 description: pros & cons, resources regarding redux replacement...
-tag: web development
+tag: web development, react, redux
 author: You
 ---
 

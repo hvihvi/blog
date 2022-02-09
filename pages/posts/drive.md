@@ -2,13 +2,13 @@
 title: Drive by Daniel Pink
 date: 2021/7/27
 description: Notes from the "Drive" by D. Pink book
-tag: web development
+tag: productivity, management, motivation, book
 author: You
 ---
 
 # Drive - The surprising truth about what motivates us
 
-This book uses social experiments to understand how motivation works.
+This book relies on social experiments to understand how motivation works.
 
 ## Mastery - Autonomy - Purpose
 

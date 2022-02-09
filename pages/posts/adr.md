@@ -2,7 +2,7 @@
 title: ADR
 date: 2021/09/01
 description: Architecture Decision Record
-tag: web development
+tag: architecture, developer experience
 author: You
 ---
 

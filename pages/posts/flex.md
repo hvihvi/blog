@@ -2,7 +2,7 @@
 title: Flexbox
 date: 2021/7/26
 description: Solutions solved via display flex
-tag: web development
+tag: web development, css, layout, font, design
 author: You
 ---
 

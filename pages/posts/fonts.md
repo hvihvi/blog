@@ -2,7 +2,7 @@
 title: Text and Fonts
 date: 2021/7/22
 description: Notes related to texts and fonts, UX, performance, css tricks...
-tag: web development
+tag: web development, font, web performances, css, user experience
 author: You
 ---
 
@@ -12,7 +12,7 @@ author: You
 
 ### Google Fonts: preconnect
 
-Use `rel=preconnect` to prepare DNS resolution, since google fonts loads CSS that then load the font at another URL
+Use `rel=preconnect` to prepare DNS resolution, since google fonts loads CSS that then load the font from another URL
 
 ```html
 <link rel="preconnect" href="https://fonts.gstatic.com" />

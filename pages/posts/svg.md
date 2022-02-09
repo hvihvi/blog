@@ -2,7 +2,7 @@
 title: SVG
 date: 2021/7/22
 description: Anything SVG related
-tag: web development
+tag: web development, css, a11y, web performances
 author: You
 ---
 

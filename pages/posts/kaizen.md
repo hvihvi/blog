@@ -2,7 +2,7 @@
 title: Kaizen
 date: 2021/7/24
 description: Notes from the "Toyota Kaizen Methods" book by Isao Kato, and Kaizen related
-tag: web development
+tag: productivity, management, book
 author: You
 ---
 

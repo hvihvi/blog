@@ -2,7 +2,7 @@
 title: Images
 date: 2021/7/22
 description: Anything image related
-tag: web development
+tag: web development, web performances, a11y, css
 author: You
 ---
 
