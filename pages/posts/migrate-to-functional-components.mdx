@@ -1,0 +1,135 @@
+---
+title: Migrate classes to functional components
+date: 2022/03/25
+description: migrate classes to hooks...
+tag: web development, react, redux, developer experience, code quality
+author: You
+---
+
+Replace class with functional component:
+
+```jsx
+// before
+class MyComponent extends React.Component<Props, State> {
+// ...
+}
+
+// after
+const MyComponent = () => // ...
+
+```
+
+Replace state with useState (use one hook per state)
+
+```jsx
+// before
+// declaration
+  override state = {
+    storeReady: false,
+    navigationReady: false,
+    animationFinished: false,
+  };
+// usage
+this.setState({...state, storeReady: true}, optionalCallback);
+<>{this.state.storeReady}</>
+
+// after
+// declaration
+const [storeReady, setStoreReady] = useState(false);
+const [navigationReady, setNavigationReady] = useState(false);
+const [animationFinished, setAnimationFinished] = useState(false);
+
+// usage
+setStoreReady(true);
+<>{storeReady}</>
+
+// if optionalCallback rethink usage first, or as a quickwin use something similar to https://stackoverflow.com/a/61612292
+useEffect(() => {
+    if (storeReadyHasChanged) {
+      optionalCallback();
+    }
+  }, [storeReady]);
+
+```
+
+Replace componentDidMount and componentWillUnmount with useEffect
+
+```jsx
+// after
+useEffect(() => {
+  componentDidMount();
+  return () => componentWillUnmount();
+}, []);
+```
+
+Replace componentDidCatch with an ErrorBoundary wrapper
+
+```jsx
+// before
+// class MyComponent...
+componenentDidCatch(error, infos) {
+  handleError();
+  throw error;
+}
+
+render () {
+return <>...</>
+}
+
+// after
+// const MyComponent...
+return <MyErrorBoundary>...</MyErrorBoundary>;
+
+// + extract another component
+class ErrorBoundary extends React.Component {
+  override componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
+    captureException(error);
+    throw error;
+  }
+
+  override render() {
+    return this.props.children;
+  }
+}
+```
+
+After initial replacement, **check for possible logical grouping**, for example an effect that fetches a state can be extracted in a dedicated hook.
+
+## Redux
+
+Replace mapStateToProps with useSelector
+
+```jsx
+// before
+const Component = ({derivedState}) => ...
+const mapStateToProps = (state) => ({derivedState: selectDerivedState(state)})
+connect(mapStateToProps)(Component)
+
+// after
+const Component = () => {
+  const derivedState = useSelector(selectDerivedState)
+	return ...
+}
+```
+
+## i18next
+
+Replace `withTranslation` HOC with useTranslation
+
+more one i18next: [https://react.i18next.com/latest/usetranslation-hook](https://react.i18next.com/latest/usetranslation-hook)
+
+```tsx
+// before
+withTranslation([i18nNS])(Component)
+
+// after
+const { t, i18n } = useTranslation([i18nNS]);
+```
+
+## React navigation
+
+remove prop drilling navigation, use useNavigation instead
+
+```tsx
+const navigation = useNavigation();
+```
