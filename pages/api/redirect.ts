@@ -6,8 +6,9 @@ export default function handler(
   request: NextApiRequest,
   response: NextApiResponse
 ) {
-  response.status(200).json({
+  response.status(302).json({
     body: 'hello world',
+    location: 'koober://koob/25',
     query: request.query,
     cookies: request.cookies
   })
