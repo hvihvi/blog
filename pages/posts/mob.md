@@ -1,6 +1,6 @@
 ---
 title: Mob Programming
-date: 2021/11/02
+date: 2022/04/02
 description: About mob programming, psychological safety...
 tag: productivity, management, motivation, learning
 author: You
@@ -49,6 +49,7 @@ Parallelism can coexist with Mob Programming:
 - Research on the side
 - Documentation on the side
 - When long task like tests/deploys run, someone can keep an eye on it to do manual tests, merge or ship to production
+- Taking notes (red bin, docs etc)
 
 ## Psychological safety
 
