@@ -6,6 +6,8 @@ tag: productivity, management, motivation, learning
 author: You
 ---
 
+import Image from 'next/image'
+
 # Mob Programming
 
 Mob programming and the power of Flow (Woody Zuill):
@@ -98,3 +100,10 @@ No parallel branches and no long lived branches = **no conflicts**.
 No need for shared "staging" environments in the team.
 
 No **context-switching** (or reduced). If you forget what you were doing due to a context-switch, the group is more likely to get back on track quickly than a single individual. Someone in the group can get ready for the next task and pick up the keyboard/screen-share as soon as the previous task ends.
+
+<Image
+  src="/images/mob-schema.png"
+  alt="mob schema"
+  width={2522}
+  height={5073}
+/>
