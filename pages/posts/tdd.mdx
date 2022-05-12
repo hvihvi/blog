@@ -1,0 +1,52 @@
+---
+title: TDD, Test Pyramids
+date: 2022/05/03
+description: Pros & Cons, rethinking outdated practices...
+tag: architecture, code quality, testing, productivity
+author: You
+---
+
+# TDD & Test Pyramid
+
+## TDD
+
+Test > Code (make it work) > Refactor (make it simple)
+
+What actually happens:
+
+Unit Test > Code > Can't refactor, tests are tightly bound to the implementation
+
+The initial idea is misunderstood, it focuses on this cycle and **forgets about other prerequisites**.
+
+Consequences are often:
+
+- Tends to create early abstractions (needed to express the test)
+- Doesn't teach you how to write valuable tests
+- Lots of unit tests, lots of mocks => low value & code hard to change
+- 1 test per function/method/file/component approaches leads to unnecessary tests
+- Trivial code gets tested
+- "this should call this with these parameters n times" (useless coverage tests)
+- Slow development cycles
+- "Refactor" is misunderstood as "hide behind an abstraction", adds more complexity
+- We feel good for creating tests, our feedback loop is flawed
+- It's hard to be the guy who deletes tests
+
+It's value is mostly:
+
+- Rubber Duck Programming effect where the test plays the duck role
+- Helps brute force your way through complexity (I don't know what I'm doing, but I can keep throwing code at the tests until it passes)
+
+## Test Pyramid
+
+The initial idea was to have few E2E tests and many unit tests.
+TDD produces many unit tests so these 2 approaches come from the same era (early 2000?).
+
+The Test Pyramid has many flaws as well:
+
+- Unit test are tightly bound to the implementation => code is hard to change
+- Unit tests don't reflect the user's behavior
+- False positive: Changing implementation details might break the test, not the app
+
+The trend has shifted in the past few years towards lifting tests up (ex: https://kentcdodds.com/blog/the-testing-trophy-and-testing-classifications)
+Thanks to libraries like testing-library https://testing-library.com/.
+Backend people are now moving in this direction as well https://www.youtube.com/watch?v=QL0HBeIAny0
