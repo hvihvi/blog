@@ -8,16 +8,21 @@ author: You
 
 # TDD & Test Pyramid
 
-## TDD
-
 Test > Code (make it work) > Refactor (make it simple)
 
 What tends to happen when we couple it with the Test Pyramid is:
 
 Unit Test > Code > Tests are tightly bound to the implementation, it's hard to refactor
 
+The trend has shifted in the past few years towards lifting tests up (ex: https://kentcdodds.com/blog/the-testing-trophy-and-testing-classifications)
+Thanks to libraries like testing-library https://testing-library.com/.
+Backend people are now moving in this direction as well https://www.youtube.com/watch?v=QL0HBeIAny0
+
 Consequences are often:
 
+- Unit tests are tightly bound to the implementation => code is hard to change
+- Unit tests don't reflect the user's behavior
+- False positive: Changing implementation details might break the test, not the app
 - Early abstractions (needed to express the test)
 - Low value unit tests (implementation details)
 - Lots of unit tests = lots of mocks => code is hard to change
@@ -34,17 +39,3 @@ It's great at:
 - Rubber Duck Programming effect where the test plays the duck role
 - Helps brute force your way through complexity (I don't know what I'm doing, but I can keep throwing code at tests until it passes)
 - Actually writing tests ("test last" tend to skip writing tests and move on, just like TDD skips refactoring)
-
-## Test Pyramid
-
-The initial idea was to have few E2E tests and many unit tests.
-
-The Test Pyramid has a few cons:
-
-- Unit tests are tightly bound to the implementation => code is hard to change
-- Unit tests don't reflect the user's behavior
-- False positive: Changing implementation details might break the test, not the app
-
-The trend has shifted in the past few years towards lifting tests up (ex: https://kentcdodds.com/blog/the-testing-trophy-and-testing-classifications)
-Thanks to libraries like testing-library https://testing-library.com/.
-Backend people are now moving in this direction as well https://www.youtube.com/watch?v=QL0HBeIAny0
