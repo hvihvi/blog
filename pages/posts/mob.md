@@ -1,6 +1,6 @@
 ---
 title: Mob Programming
-date: 2022/04/02
+date: 2022/05/24
 description: About mob programming, psychological safety...
 tag: productivity, management, motivation, learning
 author: You
@@ -12,6 +12,8 @@ import Image from 'next/image'
 
 Mob programming and the power of Flow (Woody Zuill):
 https://www.youtube.com/watch?v=28S4CVkYhWA
+
+Developer productivity (lots of great illustrations) https://about.sourcegraph.com/blog/developer-productivity-thoughts
 
 All the team working on the same thing.
 
