@@ -40,7 +40,16 @@ For long term team sanity, **inline** frequently and avoid hasty abstractions.
 Devs often go through 3 phases:
 
 1. Doesn't care about abstractions
-2. Wants to remove duplication at all cost, enforces many abstractions
+2. Learns about DRY, SoC, IoC... enforces many abstractions
 3. Avoids early abstraction
 
 > If the only tool you have is a hammer, you tend to see every problem as a nail. - Abraham Maslow
+
+## Detection & Fixes
+
+- **Huge API Surface**: many params, need to know internals, too much to learn, framework-ish
+- **Inheritance**: creates more problems than it solves
+- **All-in-one**: mapAtoB then mapBtoC might be easier to understand than mapAtoBtoC (keep a good ballance)
+- **Too much indirection**: mapAtoC might be easier to understand than mapAtoB then mapBtoC (keep a good ballance)
+- **Separation of Concern as a standalone argument**: Tidying up your socks in a "left" box and a "right" box separates concerns but it doesn't help you get dressed faster in the morning
+- **Excessive consistency**: again, keep a good ballance, consistency gives up on exploration
