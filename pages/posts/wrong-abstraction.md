@@ -12,6 +12,8 @@ author: You
 
 Sandi Metz "The wrong abstraction" https://sandimetz.com/blog/2016/1/20/the-wrong-abstraction
 
+https://sandimetz.com/99bottles
+
 Chen Lou "On the spectrum of abstractions" https://www.youtube.com/watch?v=mVVNJKv9esE
 
 Dan Abramov "The WET codebase" https://www.deconstructconf.com/2019/dan-abramov-the-wet-codebase
@@ -41,7 +43,7 @@ Devs often go through 3 phases:
 
 1. Doesn't care about abstractions
 2. Learns about DRY, SoC, IoC... enforces many abstractions
-3. Avoids early abstraction
+3. Avoids early abstraction, inlines a lot
 
 > If the only tool you have is a hammer, you tend to see every problem as a nail. - Abraham Maslow
 
@@ -53,3 +55,18 @@ Devs often go through 3 phases:
 - **Too much indirection**: mapAtoC might be easier to understand than mapAtoB then mapBtoC (keep a good ballance)
 - **Separation of Concern as a standalone argument**: Tidying up your socks in a "left" box and a "right" box separates concerns but it doesn't help you get dressed faster in the morning
 - **Excessive consistency**: again, keep a good ballance, consistency gives up on exploration
+
+## Functional programming with low level of abstraction
+
+Simple FP principles make it easier for the brain:
+
+- Pure functions: predictability/determinism
+- Immutability: no "time" dimension
+- Isolate side effects
+
+Try to make it easy to read, navigate and change:
+
+- Minimising indirections, lowering navigation overhead: less context switching
+- Using business/product/design's terminology: meaningful abstractions & less decision making
+- Duplicate when extracted parts might not live together
+- No universal right answer, only context specific pros & cons
