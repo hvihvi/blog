@@ -1,26 +1,27 @@
 ---
-title: TDD, Test Pyramids
+title: TDD + Test Pyramids
 date: 2022/05/03
 description: Pros & Cons, rethinking popular practices...
 tag: architecture, code quality, testing, productivity
 author: You
 ---
 
-# TDD & Test Pyramid
+# TDD + Test Pyramid
 
-Test > Code (make it work) > Refactor (make it simple)
+TDD = Test > Code (make it work) > Refactor (make it simple)
+Test Pyramid = lots of small/unit tests, few integration, fewer e2e
 
-What tends to happen when we couple it with the Test Pyramid is:
+What tends to happen when we couple them:
 
-Unit Test > Code > Tests are tightly bound to the implementation, it's hard to refactor
+Unit Test > Code > Tests are tightly bound to the implementation, it's hard to refactor, it works, we move on
 
 The trend has shifted in the past few years towards lifting tests up (ex: https://kentcdodds.com/blog/the-testing-trophy-and-testing-classifications)
 Thanks to libraries like testing-library https://testing-library.com/.
-Backend people are now moving in this direction as well https://www.youtube.com/watch?v=QL0HBeIAny0
+Backend devs are now moving in this direction as well https://www.youtube.com/watch?v=QL0HBeIAny0
 
 > [Write tests. Not too many. Mostly integration.](https://twitter.com/rauchg/status/807626710350839808)
 
-Consequences with TDD+Pyramid can be:
+Pain points with TDD+Pyramid can be:
 
 - Unit tests are tightly bound to the implementation => code is hard to change
 - Unit tests don't reflect the user's behavior
@@ -30,14 +31,18 @@ Consequences with TDD+Pyramid can be:
 - Lots of unit tests = lots of mocks => code is hard to change
 - 1 test per function/method/file/component approaches leads to unnecessary tests
 - Trivial code gets tested
-- "this should call this with these parameters n times" (useless coverage tests)
-- Slightly slower development cycles
+- "this should call this with these parameters n times" (nothing real gets tested)
+- Slower development cycles
 - "Refactor" is misunderstood as "hide behind an abstraction", adds more complexity
 - We feel good for creating tests, our feedback loop is flawed
 - It's hard to be the guy who deletes tests
 
-It's great at:
+Those are mostly **Test Pyramid issues**, whereas TDD is a catalyst and speeds up the process.
+
+When tests are placed high enough to play a users' role, TDD doesn't have these issues.
+
+It's also great at:
 
 - Rubber Duck Programming effect where the test plays the duck role
 - Helps brute force your way through complexity (I don't know what I'm doing, but I can keep throwing code at tests until it passes)
-- Actually writing tests ("test last" tend to skip writing tests and move on, just like TDD skips
+- Actually writing tests ("test last" tend to skip writing tests and move on, just like TDD skips refactoring
