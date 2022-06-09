@@ -1,6 +1,6 @@
 ---
 title: Text and Fonts
-date: 2021/7/22
+date: 2022/6/09
 description: Notes related to texts and fonts, UX, performance, css tricks...
 tag: web development, font, web performances, css, user experience
 author: You
@@ -90,6 +90,11 @@ overflow: hidden;
 
 ## UX
 
-For long lines with small text, increase `line-height` (easier to find next line). Decreasing `line-height` for big title is ok.
+For long lines with small text, increase `line-height` (easier to find next line). Decreasing `line-height` for big titles is ok.
 
 Readability is favored at around **50 to 75 characters per line**. Can be set with `max-width: 50ch`.
+
+## Specific usage
+
+Fast reading (bolds a few letters & lets brain autocomplete) https://bionic-reading.com/
+Memorisation (forces focus via incomplete letters, helps memorising) https://sansforgetica.rmit.edu.au/
