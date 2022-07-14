@@ -1,5 +1,5 @@
 ---
-title: React Native (for JS dev)
+title: React Native
 date: 2022/8/14
 description: React Native notes taken from a react dev perspective...
 tag: mobile, native, react, developer experience, tooling
@@ -32,6 +32,8 @@ const App = (props) => (
 
 AppRegistry.registerComponent('Appname', () => App)
 ```
+
+Compared to React, React Native doesn't use react-dom (ex: `<div/>` jsx) but instead uses base components like `View` and `Text` to build the UI.
 
 ## Metro
 
