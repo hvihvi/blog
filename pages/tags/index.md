@@ -47,3 +47,7 @@ date: 2021-03-18
 [management](tags/management)
 
 [motivation](tags/motivation)
+
+[mobile](tags/mobile)
+
+[native](tags/native)
