@@ -24,3 +24,11 @@ Feature toggles help with the "deliverable" part.
 - ISO refactor: should not modify tests (test first, lift tests up when tied to implementation...)
 
 A proof of concept git history linter https://github.com/hvihvi/glnt
+
+## Reminders
+
+grep in diffs btween 2 commits:
+
+```bash
+tig -S"track(" HEAD~500..HEAD
+```
