@@ -13,8 +13,8 @@ author: You
 Naive solution:
 
 ```jsx
-const useOptimistToggle = (isActive, toggle) => {
-  const [optimistActive, setOptimistActive] = useState(isActive)
+const useOptimistToggle = (checked, toggle) => {
+  const [optimistChecked, setOptimistChecked] = useState(checked)
 
   const optimistToggle = () => {
     setOptimistActive(!optimistActive)
@@ -24,15 +24,15 @@ const useOptimistToggle = (isActive, toggle) => {
 }
 
 export default function App() {
-  const { isActive, toggle } = useSlowToggle()
+  const { checked, toggle } = useSlowToggle()
+  const { optimistChecked, optimistToggle } = useOptimistToggle(checked, toggle)
 
-  const { optimistActive, optimistToggle } = useOptimistToggle(isActive, toggle)
   return (
     <div className="App">
       <h1>Hello CodeSandbox</h1>
       <input
         type="checkbox"
-        checked={optimistActive}
+        checked={optimistChecked}
         onClick={optimistToggle}
       />
     </div>
