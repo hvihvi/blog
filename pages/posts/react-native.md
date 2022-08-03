@@ -13,7 +13,7 @@ author: You
 Official doc : https://reactnative.dev/docs/environment-setup
 Mac M1 might need
 
-```
+```shell
 "EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 ```
 
@@ -99,13 +99,13 @@ Similar to npm install, `pod install` installs all dependencies.
 
 Typically used together with npm/yarn whenever dependencies need to be updated.
 
-```
+```shell
 npm install && cd ios && pod install && cd ..
 ```
 
 Sometimes like `rm -rf node_modules` we can do:
 
-```
+```shell
 cd ios && pod deintegrate && pod install && cd ..
 ```
 
@@ -116,3 +116,29 @@ cd ios && pod deintegrate && pod install && cd ..
 R => reloads app
 D => opens debug menu
 I => inspect
+cmd+K => toggle keyboard (check layout)
+
+## Android
+
+### Gradle
+
+Versioning & java/kotlin build tool. Replaces Maven.
+
+### Jetifier
+
+The "android" namespace was renamed "androidX", jetifier helps with retro compatibility with old libraries.
+
+### Physical device debugging
+
+#### Check if device is connected
+
+```shell
+adb devices
+```
+
+#### Reconnect metro to physical device.
+
+```shell
+adb reverse tcp:8081 tcp:8081
+# then hit R to reload Metro
+```
