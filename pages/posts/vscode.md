@@ -1,7 +1,7 @@
 ---
-title: VS Code
+title: VS Code, Intellij...
 date: 2021/12/28
-description: Notes & config to transition from IntellIJ
+description: Notes & config
 tag: web development, tooling
 author: You
 ---
@@ -17,3 +17,12 @@ author: You
 - Jest
 - Prettier
 - ESLint
+
+# Intellij
+
+in search:
+`file mask !*.map, !*.bundle,!*.jsbundle,!CHANGELOG.md,!.eslintcache`
+
+## config
+
+https://www.github.com/hvihvi/blog/blob/master/idea_settings.zip
