@@ -94,6 +94,8 @@ For long lines with small text, increase `line-height` (easier to find next line
 
 Readability is favored at around **50 to 75 characters per line**. Can be set with `max-width: 50ch`.
 
+https://type-scale.com provides good sizes based on usage.
+
 ## Specific usage
 
 Fast reading (bolds a few letters & lets brain autocomplete) https://bionic-reading.com/
