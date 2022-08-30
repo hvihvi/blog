@@ -152,3 +152,9 @@ adb devices
 adb reverse tcp:8081 tcp:8081
 # then hit R to reload Metro
 ```
+
+### Deploy
+
+Bitrise: easy CI/CD pipelines
+
+AppCenter: easy CI/CD pipelines

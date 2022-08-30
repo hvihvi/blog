@@ -100,3 +100,13 @@ https://type-scale.com provides good sizes based on usage.
 
 Fast reading (bolds a few letters & lets brain autocomplete) https://bionic-reading.com/
 Memorisation (forces focus via incomplete letters, helps memorising) https://sansforgetica.rmit.edu.au/
+
+## Styling
+
+Add an image inside text, with a `background-clip: text` and a `background-image`:
+
+```css
+background-clip: text;
+-webkit-background-clip: text;
+background-image: url('https://source.unsplash.com/random');
+```
