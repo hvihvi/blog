@@ -158,3 +158,27 @@ adb reverse tcp:8081 tcp:8081
 Bitrise: easy CI/CD pipelines
 
 AppCenter: easy CI/CD pipelines
+
+## Differences between React (Web) and React Native
+
+### Shadows
+
+Shadows have a different "CSS" API and platform specific:
+
+`shadowColor` works on both ios and android.  
+On android, `elevation` is used to create shadows. (no effect on ios)  
+On IOS, `shadowOffset`, `shadowOpacity` and `shadowRadius` are used to create shadows. (no effect on android)
+
+```jsx
+style={{
+  shadowColor: "#000",
+  shadowOffset: {
+    width: 0,
+  	height: 1,
+  },
+  shadowOpacity: 0.22,
+  shadowRadius: 2.22,
+
+  elevation: 3
+}}
+```
