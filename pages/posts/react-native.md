@@ -84,11 +84,21 @@ Gesture Handler: https://docs.swmansion.com/react-native-gesture-handler/docs/
 ### Components:
 
 Native Base: https://docs.nativebase.io/
-Mostly for prop based Layout Components (Chakra UI like) and building design-systems on top of good a11y
+Mostly for prop based Layout Components (Chakra UI like) and building a design-systems on top of good a11y defaults.
 
 ### Navigation:
 
 React Navigation: https://reactnavigation.org/docs/getting-started
+
+### dependencies:
+
+https://microsoft.github.io/rnx-kit/docs/tools/dep-check
+
+Can check which dependencies are used in the project and if they fit together or have known issues.
+
+```
+yarn rnx-dep-check --vigilant 0.68.0
+```
 
 ## IOS
 
