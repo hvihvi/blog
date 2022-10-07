@@ -1,6 +1,6 @@
 ---
-title: Mob Programming
-date: 2022/05/24
+title: Mob Programming & Teamwork
+date: 2022/10/07
 description: About mob programming, psychological safety...
 tag: productivity, management, motivation, learning
 author: You
@@ -109,3 +109,27 @@ No **context-switching** (or reduced). If you forget what you were doing due to 
   width={2522}
   height={5073}
 />
+
+## Iteration time, Cooldown time, empathy
+
+The trend to shorten Cycle times as much as possible has shifted towards a more balanced approach, long enough to build something **meaningful** (increases intrinsic motivation).  
+Short cycle times tend to go in the wrong direction, it's a poor metric.
+
+Allowing time to work on ideation and user calls to build user empathy.
+
+Minimise fragmented meetings to favor flow (defragment devs' calendar, like a hard drive)
+Context-switch cost on average **20min of flow** (according to Netlify)
+
+> "shipping is the heartbeat of your team"
+
+Shipping rate != Shipping finished feature rate
+Shipping features at all cost creates **burnout factories**.
+Shipping rate measures the ability to ship to production fast & often, not finished features.
+shipping rate #1 engineering metric (TODO: find source)  
+From a tech manager perspective, pushing devs to ship faster is counter-productive, remove things in the way instead. Devs want to ship.
+
+Examples of longer cycle times & cooldown times:
+
+- Netlify: 6 weeks product, 2 weeks free
+- "Maker weeks" at Slack
+- "Innovation days" at Slack, Google, Ambassador labs...
