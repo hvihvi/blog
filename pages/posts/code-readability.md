@@ -15,6 +15,8 @@ Like for text, it's harder to jump the next line when you're at the end of a ver
 
 ## Removing unecessary characters
 
+Examples:  
+
 ```js
 () => { return [1, 2]; }
 // can be shortened to
@@ -46,7 +48,7 @@ const two = () => 2;
 
 ## Inlining small "magic strings" or "magic numbers" (pros & cons)
 
-The cargo cult about _always_ extracting them is unjustified.  
+_Always_ extracting them is a cargo cult (https://en.wikipedia.org/wiki/Cargo_cult_programming).  
 Most of the time the best description for a magic string or number is its value.  
 For example, `if (user.age < 18)` is more readable than `if (user.age < MIN_AGE)`  
 where `MIN_AGE` is defined as `const MIN_AGE = 18` somewhere else in the code.  
