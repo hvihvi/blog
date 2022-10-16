@@ -49,20 +49,22 @@ const two = () => 2;
 ## Inlining small "magic strings" or "magic numbers" (pros & cons)
 
 _Always_ extracting them is a cargo cult (https://en.wikipedia.org/wiki/Cargo_cult_programming).  
-Most of the time the best description for a magic string or number is its value.  
-For example, `if (user.age < 18)` is more readable than `if (user.age < MIN_AGE)`  
-where `MIN_AGE` is defined as `const MIN_AGE = 18` somewhere else in the code.  
-The reader has to navigate to the definition of `MIN_AGE` to understand the code, and might context-switch from doing so.  
-Numbers and strings are immutable so extracting them doesn't help with equality.  
+The best description for a "magic" string or number is often its value.  
+For example, `if (user.age < 18)` vs `if (user.age < MIN_AGE)`  
+where `const MIN_AGE = 18` is declared somewhere else in the code.  
+The reader has to navigate to `MIN_AGE` to understand the code, which can create **context-switch**.  
+Numbers and strings are immutable in JS so extracting them doesn't help with equality.  
 Typescript make them easy and safe to use via `type YesNo = "yes" | "no"`.  
-If the number or string becomes hard to parse and equality check **for a human reader**, extracting will make it easier at the cost of navigation.  
-An example where extracting helps is colors in a design-system, `grey100` is easier to understand, remember and use compared to `"#E1E1E1"`.
+If the value becomes hard to parse and equality check **for a human reader**, extracting will make it easier at the cost of navigation.  
+An example where extracting helps is colors in a design-system, `grey100` is easier to understand, remember and use compared to `"#E1E1E1"`.  
 
 ## Shortening too long and descriptive names (pros & cons)
 
-Long and descriptive name favor understanding what the other programmer (or previous self) intended to do in a context where you don't undestand a thing, but not what the code **actually does**.  
+Long and descriptive name favors understanding the writer's intent, but not what the code **actually does**.  
 They increase line length & line wrap, are harder to parse for a human reader (it's hard to tell among long names which is which).  
-As an example, `userFromDatabaseWithAge` can probably be shortened to `user`, and the extra information provided by its long name kept implicit. We can look up its type when we need more information.
+As an example, `userFromDatabaseWithAge` can probably be shortened to `user`, and the extra information kept implicit.
+Researches show that long and descriptive name **don't help prevent/fix bugs** : http://www2.unibas.it/gscanniello/Giuseppe_Scanniello%40unibas/Home_files/TOSEM.pdf (summary: https://hillelwayne.com/post/the-best-se-paper/
+)
 
 ## Single character variables
 
