@@ -115,7 +115,7 @@ No **context-switching** (or reduced). If you forget what you were doing due to 
 The trend to shorten Cycle times as much as possible has shifted towards a more balanced approach, long enough to build something **meaningful** (increases intrinsic motivation).  
 Short cycle times tend to go in the wrong direction, it's a poor metric.
 
-Allowing time to work on ideation and user calls to build user empathy.
+Allowing time to work on ideation and user calls to **build user empathy**. Devs are more likely to make the right move when a product person isn't around (reduces blocking time), they feel more invested and requires less specifications.
 
 Minimise fragmented meetings to favor flow (defragment devs' calendar, like a hard drive)
 Context-switch cost on average **20min of flow** (according to Netlify)
