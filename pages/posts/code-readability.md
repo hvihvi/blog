@@ -65,6 +65,7 @@ They increase line length & line wrap, are harder to parse for a human reader (i
 As an example, `userFromDatabaseWithAge` can probably be shortened to `user`, and the extra information kept implicit.
 Researches show that long and descriptive name **don't help prevent/fix bugs** : http://www2.unibas.it/gscanniello/Giuseppe_Scanniello%40unibas/Home_files/TOSEM.pdf (summary: https://hillelwayne.com/post/the-best-se-paper/
 )
+ex: https://www.codesimplicity.com/wp-content/uploads/2022/05/CodeSimplicity.pdf "Readability" chapter (long vs short, spaced vs compact...).
 
 ## Single character variables
 
