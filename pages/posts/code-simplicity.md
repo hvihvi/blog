@@ -1,3 +1,12 @@
+---
+title: Code Simplicity Book
+date: 2022/09/01
+description: Book notes
+tag: architecture, developer experience
+author: You
+---
+
+
 # Code Simplicity Book
 
 Written by Max Kanat-Alexander, ex Google Tech Lead for Code Health, Linkedin SWE.
