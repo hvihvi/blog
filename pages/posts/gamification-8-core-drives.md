@@ -10,8 +10,6 @@ author: You
 
 https://www.notion.so/Intro-la-gamification-et-aux-8-core-drives-selon-Yu-Kai-Chou-e1728e31bede440ba5d272a3b66d662a
 
-Expands on motivation vectors from "Drive" by Daniel Pink:
-
 1. Epic meaning & calling => Purpose bigger than yourself
 2. Development & accomplishment => Mastery
 3. Empowerment of creativity & feedback => Autonomy
