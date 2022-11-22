@@ -20,3 +20,11 @@ const definedArray = withUndefined.filter(isDefined)
 ```
 
 Otherwise TS doesn't infer that the result is defined.
+
+## Remove unused exports
+
+External library
+
+```
+ts-prune
+```

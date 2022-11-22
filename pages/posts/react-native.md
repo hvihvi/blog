@@ -1,6 +1,6 @@
 ---
 title: React Native
-date: 2022/8/14
+date: 2022/10/17
 description: React Native notes...
 tag: mobile, native, react, developer experience, tooling
 author: You
@@ -156,11 +156,17 @@ The "android" namespace was renamed "androidX", jetifier helps with retro compat
 adb devices
 ```
 
-#### Reconnect metro to physical device.
+#### Reconnect metro to physical device
 
 ```shell
 adb reverse tcp:8081 tcp:8081
 # then hit R to reload Metro
+```
+
+#### Retrieve logs
+
+```bash
+adb logcat -d > log.txt
 ```
 
 ### Deploy
@@ -192,3 +198,11 @@ style={{
   elevation: 3
 }}
 ```
+
+## Animations & Gestures
+
+Reanimated 2 & Gesture Handler are the main libraries.
+
+### Reanimated 2
+
+Shared Values are computed on the UI thread, manipulated synchronously there, and read asynchronously on the RN JS thread.

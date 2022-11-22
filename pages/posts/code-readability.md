@@ -15,7 +15,7 @@ Like for text, it's harder to jump the next line when you're at the end of a ver
 
 ## Removing unecessary characters
 
-Examples:  
+Examples:
 
 ```js
 () => { return [1, 2]; }
@@ -56,7 +56,7 @@ The reader has to navigate to `MIN_AGE` to understand the code, which can create
 Numbers and strings are immutable in JS so extracting them doesn't help with equality.  
 Typescript make them easy and safe to use via `type YesNo = "yes" | "no"`.  
 If the value becomes hard to parse and equality check **for a human reader**, extracting will make it easier at the cost of navigation.  
-An example where extracting helps is colors in a design-system, `grey100` is easier to understand, remember and use compared to `"#E1E1E1"`.  
+An example where extracting helps is colors in a design-system, `grey100` is easier to understand, remember and use compared to `"#E1E1E1"`.
 
 ## Shortening too long and descriptive names (pros & cons)
 
