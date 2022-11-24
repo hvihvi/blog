@@ -17,6 +17,7 @@ author: You
 - Jest
 - Prettier
 - ESLint
+- Github Copilot
 
 # Intellij
 
