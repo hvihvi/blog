@@ -24,7 +24,8 @@ author: You
 - change ~/.zshrc to use af-magic theme
 - install zsh-autosuggestions https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh
 - install zsh-syntax-highlighting https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
-- install Xcode (App Store) => big download
+- install Xcode from App Store (big download)
 - brew install autojump
 - install VSCode
-- check VSCode post for config
+- check VSCode post for config & plugins
+
