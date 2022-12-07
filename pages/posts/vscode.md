@@ -17,12 +17,24 @@ author: You
 - Prettier
 - ESLint
 - Github Copilot
+- Abracadabra (refactoring)
+
+## Config
+
+- check Linked Editing (auto-edits closing html brackets)
 
 # Intellij
 
 in search:
 `file mask !*.map, !*.bundle,!*.jsbundle,!CHANGELOG.md,!.eslintcache`
 
+## framework/language/lib agnostic plugins
+
+- string manipulation
+- github copilot
+
 ## config
 
-https://www.github.com/hvihvi/blog/blob/master/idea_settings.zip
+remap ctrl+F to navigate
+
+https://www.github.com/hvihvi/blog/blob/master/idea_settings.zip (or synced)
