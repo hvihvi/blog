@@ -9,7 +9,7 @@ author: You
 # Mac tooling
 
 - Flycut (copy/paste history)
-- Karabiner (remap keys)
+- Karabiner (remap keys, config ./karabiner_config.zip at this repo root, config folder can be found at ~/.config/karabiner after installing)
 
 # Mac setup
 
@@ -18,6 +18,7 @@ author: You
 - Trackpad: speed maxed
 - intall Chrome & Firefox Developer Edition
 - install iTerm2
+- Preferences... > Profiles > Keys > Key Mapping tab > presets... > natural text editing
 - change cursor color: Settings>Profile>Colors rgb 254 1 249
 - cmd (shift) S => split (hori)vertically
 - ctrl (shift) @ => next (prev) Pane
