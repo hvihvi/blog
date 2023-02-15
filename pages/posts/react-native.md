@@ -150,6 +150,12 @@ The "android" namespace was renamed "androidX", jetifier helps with retro compat
 
 ### Physical device debugging
 
+#### Upload APK to device
+
+```sh
+adb install ~/Downloads/build/app-release.apk
+```
+
 #### Check if device is connected
 
 ```shell
