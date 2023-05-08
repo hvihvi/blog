@@ -39,3 +39,11 @@ author: You
 - might require `sudo chown -R $(whoami) ~/.npm` or `sudo chown -R $USER /usr/local/lib/node_modules` if npm can't global install
 - follow React Native docs https://reactnative.dev/docs/environment-setup
 - `brew install tig`
+- install steerMouse (Settings>SteerMouse>disable acceleration & sensitivity) + licence
+
+```sh
+$ git config --global alias.co checkout
+$ git config --global alias.br branch
+$ git config --global alias.cm commit
+$ git config --global alias.st status
+```
