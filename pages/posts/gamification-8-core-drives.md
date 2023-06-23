@@ -1,7 +1,7 @@
 ---
 title: Gamification 8 Core Drives (Yu-Kai Chou)
 date: 2022/10/01
-description: Architecture Decision Record
+description:
 tag: architecture, developer experience
 author: You
 ---
