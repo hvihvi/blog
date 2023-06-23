@@ -1,7 +1,7 @@
 ---
-title: 100 Things Every Designer Needs to Know About People (Susan Weinschenk)
+title: 100 Things Every Designer Needs to Know About People
 date: 2023/6/12
-description: Book notes
+description: Book notes (Susan Weinschenk)
 tag: user experience, book, developer experience, design, code quality, font
 author: You
 ---
