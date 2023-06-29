@@ -1,5 +1,5 @@
 ---
-title: How to take smart notes by Sönke Ahrens
+title: How to take smart notes (book) by Sönke Ahrens
 date: 2022/02/05
 description: Notes from the book...
 tag: productivity, motivation, management, learning, book

@@ -59,12 +59,13 @@ Could use `/*prettier-ignore*/` for a visual code representation:
   <Child3 />
 </Stack>
 ;<Stack line gap="2px">
-  {/* prettier-ignore */}
   <Child1 />
   <Child2 />
   <Child3 />
 </Stack>
 ```
+
+We could use `/*prettier-ignore*/` for a visual code representation where "Row" childrens are in the same line.
 
 Making the bundler translate indentation to line/column might be an idea to explore...
 
@@ -84,6 +85,13 @@ API Example:
     <Box>World 2</Box>
   </Column>
 </Row>
+```
+
+Using boolean props can help making the API even more concise but it can cause confusion.
+
+```jsx
+<Stack column />
+<Stack column row>Can be confusing</Stack>
 ```
 
 ## Responsive in JS
@@ -123,7 +131,7 @@ function Page() {
 
 Credits: https://www.netlify.com/blog/2020/12/05/building-a-custom-react-media-query-hook-for-more-responsive-apps/
 
-We abstract on top of this to match UX designer's language and their breakpoints:
+We abstracted on top of this to match UX designer's language and their breakpoints:
 
 ```js
 const { isMobile, isTablet, isDesktop } = useResponsive()

@@ -1,11 +1,10 @@
 ---
-title: Code Simplicity Book
+title: Code Simplicity (book)
 date: 2022/09/01
 description: Book notes
 tag: architecture, developer experience
 author: You
 ---
-
 
 # Code Simplicity Book
 

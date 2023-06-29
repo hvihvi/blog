@@ -16,4 +16,4 @@ margin-left: calc(50% - 50vw);
 margin-right: calc(50% - 50vw);
 ```
 
-The way I picture it is that it "compresses" the component with its size in margin, then stretches it to full width.
+The way I picture it is that it "compresses" the element with its size in margin, then stretches it to full width.

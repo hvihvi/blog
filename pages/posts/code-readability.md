@@ -53,7 +53,7 @@ The best description for a "magic" string or number is often its value.
 For example, `if (user.age < 18)` vs `if (user.age < MIN_AGE)`  
 where `const MIN_AGE = 18` is declared somewhere else in the code.  
 The reader has to navigate to `MIN_AGE` to understand the code, which can create **context-switch**.  
-Numbers and strings are immutable in JS so extracting them doesn't help with equality.  
+Numbers and strings are immutable in JS. Extracting them doesn't help with equality.  
 Typescript make them easy and safe to use via `type YesNo = "yes" | "no"`.  
 If the value becomes hard to parse and equality check **for a human reader**, extracting will make it easier at the cost of navigation.  
 An example where extracting helps is colors in a design-system, `grey100` is easier to understand, remember and use compared to `"#E1E1E1"`.
