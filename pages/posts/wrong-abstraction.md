@@ -47,21 +47,21 @@ Devs often go through 3 phases:
 
 > If the only tool you have is a hammer, you tend to see every problem as a nail. - Abraham Maslow
 
-## Detection & Fixes
+## Examples
 
 - **Huge API Surface**: many params, need to know internals, too much to learn, framework-ish
-- **Inheritance**: creates more problems than it solves
-- **All-in-one**: mapAtoB then mapBtoC might be easier to understand than mapAtoBtoC (keep a good ballance)
-- **Too much indirection**: mapAtoC might be easier to understand than mapAtoB then mapBtoC (keep a good ballance)
-- **Separation of Concern as a standalone argument**: Tidying up your socks in a "left" box and a "right" box separates concerns but it doesn't help you get dressed faster in the morning
+- **All-in-one**: mapAtoB then mapBtoC might be easier to understand than mapAtoC
+- **Too much indirection**: on the other hand, mapAtoC might be easier to understand than mapAtoB then mapBtoC. If someone asks how to go to the eiffel tower, telling them to go to Champs de Mars won't help, nor explaining how to walk and cross the street.
+- **Separation of Concern as an argument on its own**: Tidying up socks in a "left" box and a "right" box separates concerns but it doesn't help get dressed faster in the morning
 - **Excessive consistency**: again, keep a good ballance, consistency gives up on exploration
+- **Inheritance**: tends to be missused
 
 ## Functional programming with low level of abstraction
 
 Simple FP principles make it easier for the brain:
 
-- Pure functions: predictability/determinism
-- Immutability: no "time" dimension
+- Pure functions: predictability & determinism
+- Immutability: removes the "time" dimension that is hard for the brain
 - Isolate side effects
 
 Try to make it easy to read, navigate and change:

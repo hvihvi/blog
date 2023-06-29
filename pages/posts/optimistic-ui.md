@@ -40,4 +40,6 @@ export default function App() {
 }
 ```
 
+React-Query is good at handling optimistic UI, it's an **async state manager** (despite having "query" in its name, it can work with any async state).
+
 ## Debounce flickery state

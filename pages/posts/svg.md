@@ -44,4 +44,4 @@ Add css hidden text next to SVGs that can be parsed by screen readers:
 
 ## Font SVG vs Inline SVG
 
-Inline SVGs are better for performance and accessibility, avoid font svgs.
+The Font svgs method lacks a11y and should be avoided. Inline SVGs get processed on first browser paint. If they are heavy and can be displayed after the initial paint, we can use an `img` tag (with `loading="lazy"`).

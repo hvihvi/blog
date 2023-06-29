@@ -1,7 +1,7 @@
 ---
-title: Make it stick
+title: Make it stick (book)
 date: 2021/7/27
-description: Notes from the "Make it stick" book
+description: Reading notes
 tag: learining, productivity, book
 author: You
 ---

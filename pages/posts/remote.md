@@ -9,6 +9,7 @@ author: You
 # Remote working
 
 Pokemon style remote workplaces: https://www.gather.town/
-Draw schema: https://excalidraw.com/
-Retro: https://metroretro.io/
+Sketching: https://excalidraw.com/
+Retrospectives: https://metroretro.io/
 Whiteboards: https://miro.com/
+Document collaboration: https://www.notion.so/

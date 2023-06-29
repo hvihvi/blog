@@ -1,5 +1,5 @@
 ---
-title: Refactoring UI
+title: Refactoring UI (book)
 date: 2021/12/01
 description: Notes from the book...
 tag: web development, book, design, user experience

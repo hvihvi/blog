@@ -39,7 +39,7 @@ Compared to React, React Native doesn't use react-dom (ex: `<div/>` jsx) but ins
 
 https://facebook.github.io/metro/docs/api
 
-Metro is a **bundler** (like Webpack) for React Native built by facebook. It turns the JS code into a single file.  
+Metro is a **bundler** (like Webpack/Vite) for React Native built by facebook. It turns the JS code into a single file.  
 `yarn start` runs a local server (like webpack dev server). It can the communicate with multiple devices/simulators.  
 `yarn start --reset-cache` to clear cache.  
 Metro does not support tree shaking. Make sure to remove unused code (eslint rules can help).
@@ -77,14 +77,15 @@ Flipper (facebook's debugger): https://fbflipper.com/docs/features/react-native/
 
 React Native's Animated API (to get started)
 
-Reanimated2: https://docs.swmansion.com/react-native-reanimated/docs
+Reanimated: https://docs.swmansion.com/react-native-reanimated/docs
 
 Gesture Handler: https://docs.swmansion.com/react-native-gesture-handler/docs/
 
 ### Components:
 
 Native Base: https://docs.nativebase.io/
-Mostly for prop based Layout Components (Chakra UI like) and building a design-systems on top of good a11y defaults.
+Mostly for prop based Layout Components (Chakra UI like) and building a design-systems on top of good a11y defaults. Can have performance issues.  
+`@shopify/restyle` is likely a better alternative.
 
 ### Navigation:
 

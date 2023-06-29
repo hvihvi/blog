@@ -25,7 +25,7 @@ The pure part takes an array of cards as input, and returns the solution (3 card
 Anything solvable via imperative, sequential, mutable, or OO programming, should be solvable via FP (pure functions, no mutations...), according to **Alonzo Church**'s researches on lambda-calculus, in the Church-Turing thesis (1935-1936).
 (Thanks to @NickServ on Reactiflux Discord and Lambda calcul Devoxx 2021 presentation for this pointer).
 
-Solving it in an imperative way at first was fairly easy but quite verbose and not very expressive. We wanted to find a functional algorithm, therefore mutability and for loops were prohibed.
+Solving it in an imperative way at first was fairly easy but quite verbose and not very expressive. We wanted to find a declarative functional algorithm, therefore mutability and for loops were prohibed.
 
 We found this solution as a pointer for the recursion https://stackoverflow.com/a/60590411.
 
@@ -35,9 +35,9 @@ To iterate over all cards, we try to solve it for the first card (destructured p
 
 ```ts
 export const solve = ([firstCard, ...remainingCards]: Card[]): Card[] => {
-  const resultat = solveForCard(firstCard, remainingCards)
-  if (resultat.length) {
-    return resultat
+  const result = solveForCard(firstCard, remainingCards)
+  if (result.length) {
+    return result
   }
   return solve(remainingCards)
 }

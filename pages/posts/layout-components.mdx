@@ -32,7 +32,7 @@ CSS was only used in design-system components, which included a Box and a a Stac
 
 ## Box
 
-An abstraction that represents space around a component. (Our UX designers use the word "spacing" so we went with it, but it's just padding)
+An abstraction that represents space around a component. (Our UX designers use the word "spacing" so we went with it, but it's just margins)
 
 ```jsx
 <Box horizontalSpacing="4px">
@@ -58,9 +58,8 @@ Could use `/*prettier-ignore*/` for a visual code representation:
   <Child2 />
   <Child3 />
 </Stack>
-
-{/* prettier-ignore */}
 ;<Stack line gap="2px">
+  {/* prettier-ignore */}
   <Child1 />
   <Child2 />
   <Child3 />
@@ -68,6 +67,24 @@ Could use `/*prettier-ignore*/` for a visual code representation:
 ```
 
 Making the bundler translate indentation to line/column might be an idea to explore...
+
+## Aiming for dev Flow
+
+At Koober, we went for a shorter API, we used concise naming and minimized effort in typing/auto-importing/completing.  
+We reached flow state more often that way.  
+Switching files, browsing imports, bringing up auto-completion, live-reload delays etc. are all tiny details that can break flow.
+
+API Example:
+
+```jsx
+<Row m={2} bg="red.100">
+  <Box px={4}>Hello</Box>
+  <Column ml={4} gap={2}>
+    <Box>World 1</Box>
+    <Box>World 2</Box>
+  </Column>
+</Row>
+```
 
 ## Responsive in JS
 
