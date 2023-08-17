@@ -83,8 +83,8 @@ Gesture Handler: https://docs.swmansion.com/react-native-gesture-handler/docs/
 
 ### Components:
 
-Native Base: https://docs.nativebase.io/
-Mostly for prop based Layout Components (Chakra UI like) and building a design-systems on top of good a11y defaults. Can have performance issues.  
+Native Base 3: https://docs.nativebase.io/
+Mostly for prop based Layout Components (like Chakra UI) and building a design-systems on top of good a11y defaults. Can have performance issues.  
 `@shopify/restyle` is likely a better alternative.
 
 ### Navigation:
@@ -205,6 +205,8 @@ style={{
   elevation: 3
 }}
 ```
+
+https://github.com/alan-eu/react-native-fast-shadow offers a cross platform solution.
 
 ## Animations & Gestures
 
