@@ -42,6 +42,10 @@ Next, repeat until length -2, 2 last items sorted.
 This takes N x (N + (N-1) + (N-2) + ... + 1).
 The sum if you add the last item to the first etc ends up being N/2 (+ constant maybe), so we have a complexity of O(N*N/2) => O(N²)
 
+### Quick Sort
+Pick an pivot item in the array (ideally somewhere in the middle). Place > items to the left, > items to the right. Then reccursion on left/right until 1 item arrays.
+O(NlogN)
+Worst case: reversed array => becomes O(N²)
 
 ## Lists
 
@@ -62,3 +66,13 @@ Get item is worst on LinkedLists, removing from the front is worst on ArrayLists
 index based head and tail.
 Push, pop, shifts are O(1).
 Can modulo head & tail (ring buffer), so that if we overflow at the end we insert at start if there is room. => resize when tail exceeds head. 
+
+## Trees
+
+### Breadth first Search
+Translates to "en longueur", we visit all items at each level.
+
+### Binary Search Trees
+Tree with a rule "this side is >=, this side is <".
+"find" is O(log(N)) or edge case O(N) if it is not ballanced.
+"insert" is on average O(log(N)), worst case O(N), height grows log compared to total item size (like a square's area) if it's ballanced.
