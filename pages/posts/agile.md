@@ -44,8 +44,16 @@ Competent, autonomous people need less structure to produce reliable, high-quali
 
 Scrum/Jira is optimized for reporting => low trust environment
 
-## 6-pager
+## 6-pager (Amazon)
 
 - Structured as a narrative essay (no slides or bullet points)
 - Clear purpose, background, problem/opportunity, solution, alternatives, risks, FAQs
 - Meeting format: 20-30min of silent reading, then starts the discussion
+
+## RFCs (Uber)
+
+- little plan before building
+- capture the plan in a short document
+- have a few selected people review
+- send to all engineers. Let everyone comment
+- have everyone follow these steps for anything non-trivial, keep this a lightweight process
