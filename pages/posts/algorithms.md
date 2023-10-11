@@ -2,7 +2,7 @@
 title: Algorithms
 date: 2023/09/26
 description: Notes about algorithms & data structures
-tag:  performances
+tag: web performances, user experience
 author: You
 ---
 
