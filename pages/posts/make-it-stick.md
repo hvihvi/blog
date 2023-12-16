@@ -21,12 +21,31 @@ Most chapter titles are self explanatory:
 - Increase your abilities
 - Make it stick
 
+> "Learning is an acquired skill, and the most effective strategies are often counterintuitive."
+> "Learning is deeper and more durable when it's effortful."
+> "Trying to solve a problem before being taught the solution leads to better learning, even when errors are made in the attempt."
+> "Retrieval practice yelds the best results" => quizzes, test, flashcards, etc.
+> "Trying to solve a problem before being taught the solution leads to better learning, even when errors are made in the attempt."
+> "Linking new knowledge to prior knowledge, there is no limit to how much one can learn in this way. Make your own mental models.""
+> "Making mistakes and correcting them builds the bridges to advanced learning."
+> "Try to rephrase text into your own words and to what you know."
+> "Retrieval-testing interrupts forgetting, so regular self-quizzing is a great way to learn - in doing so, you find what you know and what you don't know."
+
 ## Misconceptions
 
 Repetition doesn't help.  
-Low effort shortcuts overall don't help.
 Focused effort doesn't help (single topic, long periods).
+Repetion gives a false sense of mastery. You'll forget quickly.
+Low effort shortcuts overall don't help. But we can use our effort more efficiently if we know how to learn.
 Learning styles/preferences (ex: hearing vs seeing) is a myth.
+
+Study by Roediger and Karpicke:
+* 1 group quizzed or tested after reading
+* 1 group re-reads
+* 1 control group
+=> +50% retention for the quizzed/tested group
+
+research by Cepeda et al => spaced practice is better than massed practice (cramming)
 
 ## Factual
 
