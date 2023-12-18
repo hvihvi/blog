@@ -50,3 +50,8 @@ $ git config --global alias.st status
 
 - `brew install node`
 - `npm install -g n`
+
+
+- `brew install ripgrep` (ex: `rg something path/to/search*`)
+- install neovim
+
