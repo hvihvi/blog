@@ -10,6 +10,8 @@ author: You
 
 Non-transferable value discourage switching product, ex: twitter followers or gmail mails
 
+4 step cycle: trigger, action, variable reward, investment
+
 ## Trigger
 
 > A habit is when not doing an action causes a bit of discomfort.
@@ -70,7 +72,7 @@ Examples of making user's life easier: Google reduces mental effort (no ads, emp
 
 Endowed progress effect: people who believe they are already closer to a goal are more likely to persist in the face of setbacks. => experiment with 2 groups of customer, one with 2 stamps, one with no stamps. The group with 2 stamps is more likely to complete the card even if they have the same amount to complete.
 
-# Variable reward
+## Variable reward
 
 A study revealed that what draws us to act is not the sensation we receive from the reward itself, but the need to alleviate the craving for that reward.
 
@@ -79,3 +81,41 @@ Predictable rewards are less exciting than unpredictable ones. ex: slot machine,
 > The ritual of connecting with like-minded people existed long before Fitocracy, and the company leverages this behavior by making it easier and more rewarding to share encouragement, exchange advice, and receive praise. In fact, a recent study found social factors were the most important reasons people used the service and recommended it to others.
 
 > Unfortunately, too many companies build their products betting users will do what they make them do instead of letting them do what they want to do.
+
+Games with finite variability have less retention than infinite variability.
+
+> When our autonomy is threatened, we feel constrained by our lack of choices and often rebel against doing a behavior. Psychologists refer to this as reactance. Maintaining a sense of user autonomy and trust is a requirement for sustained engagement.
+
+Ask users: Are there any moments of delight or surprise? Is there anything they find particularly satisfying about using the product?
+What outcome (reward) alleviates the user’s pain? Is the reward fulfilling, yet leaves the user wanting more?
+
+3 reward types:
+
+1. Reward of the tribe: social rewards, ex: likes, followers, etc.
+2. Reward of the hunt: search for resources, ex: search for information, etc.
+3. Reward of the self: mastery, competency, completion, ex: level up, etc.
+
+## Investment
+
+The IKEA effect: people value more what they have built.
+
+> Reputation makes users, both buyers and sellers, more likely to stick with whichever service they have invested their efforts in to maintain a high-quality score
+
+Progressively prompt for user investment.
+
+Users want to avoid cognitive dissonance. Ex: I'm better than my friend => purchase pay 2 win (ex: hearthstone cards).
+
+## Misc
+
+- What do users really want?
+- What pain is your product relieving? (Internal trigger)
+- What brings users to your service? (External trigger)
+- What is the simplest action users take in anticipation of reward, and how can you simplify your product to make this action easier? (Action)
+- Are users fulfilled by the reward yet left wanting more? (Variable reward)
+- What “bit of work” do users invest in your product?
+- Does it load the next trigger and store value to improve the product with use? (Investment)
+
+> When pressed they admit they would not actually use their own creations. Their holier-than-thou products often try to “gamify” some task no one really wants to do by inserting run-of-the-mill incentives such as badges or points that don’t actually hold value for their users.
+
+> Their so-called reality distortion fields keep them from asking the critical question, “Would I actually find this useful?”
+> => nearly always "no"
