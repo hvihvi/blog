@@ -46,6 +46,8 @@ const two = (): number => 2;
 const two = () => 2;
 ```
 
+Small line length and removing unecessary characters makes navigating in code faster.
+
 ## Inlining small "magic strings" or "magic numbers" (pros & cons)
 
 _Always_ extracting them is a cargo cult (https://en.wikipedia.org/wiki/Cargo_cult_programming).  
@@ -66,6 +68,8 @@ As an example, `userFromDatabaseWithAge` can probably be shortened to `user`, an
 Researches show that long and descriptive name **don't help prevent/fix bugs** : http://www2.unibas.it/gscanniello/Giuseppe_Scanniello%40unibas/Home_files/TOSEM.pdf (summary: https://hillelwayne.com/post/the-best-se-paper/
 )
 ex: https://www.codesimplicity.com/wp-content/uploads/2022/05/CodeSimplicity.pdf "Readability" chapter (long vs short, spaced vs compact...).
+
+Long names are also harder to manipulate as text. Most commonly used navigation keyboard shortcuts go to next/previous/specific word, or line start/end. Editing a long camelCase name for example tend to require more effort, like switching to camel hump mode.
 
 ## Single character variables
 
