@@ -28,3 +28,5 @@ External library
 ```
 ts-prune
 ```
+
+or `knip`
