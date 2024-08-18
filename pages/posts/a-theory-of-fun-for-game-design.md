@@ -1,6 +1,6 @@
 ---
 title: A Theory Of Fun For Game Design
-date: 2024/06/28
+date: 2024/08/08
 description: Book notes
 tag: user experience, book, developer experience, design, code quality, font
 author: You
