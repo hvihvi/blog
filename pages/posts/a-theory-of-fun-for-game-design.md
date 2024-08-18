@@ -10,17 +10,16 @@ author: You
 
 quotes from the book
 
-## Grok
 
-To "Grok" something:
+## On Gamification
 
-You understand something so deeply that you become one with it & even love it.
+Often miss the point of games.
 
-3 levels:
+Gamification (rewards, points etc) is often layered on top of a system that lacks the rich interpretability of a good game. A reward structure alone doesn't make good games. => See Yu Kai Chou gamification 8 core drives (farmville example)
 
-- conscious thought, logical / mathematical thinking
-- really slow, integrative, intuitive, associative. Links things that don't make much sense together
-- not thinking, miscalled as muscle-memory, autonomic nervous system, instinctive descision making. You can just think of doing it and it'll get much of the way there
+Like gamification, it's "dressing" is irrelevant to what the game is at its core.
+
+The best test of a game’s fun in the strict sense is playing the game with no graphics, no music, no sound, no story, nothing. If that is fun, then everything else will serve to focus, refine, empower, and magnify. But all the dressing in the world can’t change iceberg lettuce into roast turkey.
 
 ## Fun = Mastery/Learning/Understanding
 
@@ -97,13 +96,15 @@ User generated content too (ex: mario maker, portal map creation...).
 Research tell us that happiness is driven by factors like gratitude, using one's strength, sense of social connection, striving for goals or optimism.
 
 
-# On Gamification
+### Grok
 
-Often miss the point of games.
-Gamification (rewards, points etc) is often layered on top of a system that lacks the rich interpretability of a good game. A reward structure alone doesn't make good games. => See Yu Kai Chou gamification 8 core drives & farmville example
+To "Grok" something:
 
-Like gamification, it's "dressing" is irrelevant to what the game is at its core.
+You understand something so deeply that you become one with it & even love it.
 
-The best test of a game’s fun in the strict sense is playing the game with no graphics, no music, no sound, no story, nothing. If that is fun, then everything else will serve to focus, refine, empower, and magnify. But all the dressing in the world can’t change iceberg lettuce into roast turkey.
+3 levels:
 
+- conscious thought, logical / mathematical thinking
+- really slow, integrative, intuitive, associative. Links things that don't make much sense together
+- not thinking, miscalled as muscle-memory, autonomic nervous system, instinctive descision making. You can just think of doing it and it'll get much of the way there
 
