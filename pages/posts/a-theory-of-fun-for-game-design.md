@@ -1,5 +1,5 @@
 ---
-title: 100 Things Every Designer Needs to Know About People (book) by Susan Weinschenk
+title: A Theory Of Fun For Game Design
 date: 2024/06/28
 description: Book notes
 tag: user experience, book, developer experience, design, code quality, font
