@@ -84,7 +84,7 @@ Checking for the absence of fun:
 * Can the core mechanic support multiple types of challenges?
 * Can the player bring multiple abilities to bear on the challenge?
 * At high levels of difficulty, does the player have to bring multiple abilities to bear on the challenge?
-* Is there skill involved in using an ability? (If not, is this a fundamental “move” in the game, like moving one checker piece?)
+* Is there skill involved in using an ability? (If not, is this a fundamental "move" in the game, like moving one checker piece?)
 * Are there multiple success states to overcoming the challenge? (In other words, success should not have a single guaranteed result.)
 * Do advanced players get no benefit from tackling easy challenges?
 * Does failing at the challenge at the very least make you have to try again?
@@ -97,7 +97,7 @@ User generated content too (ex: mario maker, portal map creation...).
 Research tell us that happiness is driven by factors like gratitude, using one's strength, sense of social connection, striving for goals or optimism.
 
 
-# On "Gamification"
+# On Gamification
 
 Often miss the point of games.
 Gamification (rewards, points etc) is often layered on top of a system that lacks the rich interpretability of a good game. A reward structure alone doesn't make good games. => See Yu Kai Chou gamification 8 core drives & farmville example
@@ -105,4 +105,5 @@ Gamification (rewards, points etc) is often layered on top of a system that lack
 Like gamification, it's "dressing" is irrelevant to what the game is at its core.
 
 The best test of a game’s fun in the strict sense is playing the game with no graphics, no music, no sound, no story, nothing. If that is fun, then everything else will serve to focus, refine, empower, and magnify. But all the dressing in the world can’t change iceberg lettuce into roast turkey.
+
 
