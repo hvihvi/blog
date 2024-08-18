@@ -60,34 +60,34 @@ The destiny of games is to become boring.
 Fun is the process, routine is the destination.
 
 Successful games tend to incorporate the following elements:
-* Preparation: before taking a challenge, the player get to make choices that change his odds (ex: rune trees in LoL)
-* A sense of space
-* A solid core mechanism
-* A range of challenges: this is basically content
-* A range of abilities required to solve the task
-* Skill required in using the abilities
+- Preparation: before taking a challenge, the player get to make choices that change his odds (ex: rune trees in LoL)
+- A sense of space
+- A solid core mechanism
+- A range of challenges: this is basically content
+- A range of abilities required to solve the task
+- Skill required in using the abilities
 
 If a game involves no preparation, we say it relies on chance. If there’s no sense of space, we call it trivial. If there’s no core mechanic, there’s no game system at all. If there’s no range of challenges, we exhaust it quickly. If there aren’t multiple choices to make, it’s simplistic. And if skill isn’t required, it’s tedious.
 
 To make it a learning experience:
-* Variable feedback system
-* The mastery problem must be dealt with. ex: bottom-feeding, high lvl player farming low levels
-* Failure must have a cost (super meat boy lets you retry infinitely, the cost would be progression lost in the lvl)
+- Variable feedback system
+- The mastery problem must be dealt with. ex: bottom-feeding, high lvl player farming low levels
+- Failure must have a cost (super meat boy lets you retry infinitely, the cost would be progression lost in the lvl)
 
 Not requiring skill should be considered a cardinal sin of game design.
 
 Checking for the absence of fun:
-* Do you have to prepare before taking on the challenge?
-* Can you prepare in different ways and still succeed?
-* Does the environment in which the challenge takes place affect the challenge?
-* Are there solid rules defined for the challenge you undertake?
-* Can the core mechanic support multiple types of challenges?
-* Can the player bring multiple abilities to bear on the challenge?
-* At high levels of difficulty, does the player have to bring multiple abilities to bear on the challenge?
-* Is there skill involved in using an ability? (If not, is this a fundamental "move" in the game, like moving one checker piece?)
-* Are there multiple success states to overcoming the challenge? (In other words, success should not have a single guaranteed result.)
-* Do advanced players get no benefit from tackling easy challenges?
-* Does failing at the challenge at the very least make you have to try again?
+- Do you have to prepare before taking on the challenge?
+- Can you prepare in different ways and still succeed?
+- Does the environment in which the challenge takes place affect the challenge?
+- Are there solid rules defined for the challenge you undertake?
+- Can the core mechanic support multiple types of challenges?
+- Can the player bring multiple abilities to bear on the challenge?
+- At high levels of difficulty, does the player have to bring multiple abilities to bear on the challenge?
+- Is there skill involved in using an ability? (If not, is this a fundamental "move" in the game, like moving one checker piece?)
+- Are there multiple success states to overcoming the challenge? (In other words, success should not have a single guaranteed result.)
+- Do advanced players get no benefit from tackling easy challenges?
+- Does failing at the challenge at the very least make you have to try again?
 
 "Emergent behaviour": pattern that derive from the initial set of rules, discovered by players that the designer did not foresee
 
