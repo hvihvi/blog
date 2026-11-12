@@ -5,7 +5,6 @@ type Frontmatter = {
   date: string | Date
   description?: string
   tag?: string
-  draft?: boolean
 }
 
 type PostModule = { default: ComponentType; frontmatter: Frontmatter }
@@ -41,7 +40,6 @@ export function formatDate(date: Date): string {
 }
 
 export const posts: Post[] = Object.entries(modules)
-  .filter(([, mod]) => !mod.frontmatter?.draft)
   .map(([file, mod]) => ({
     slug: file.split('/').pop()!.replace(/\.mdx?$/, ''),
     title: mod.frontmatter.title,

@@ -28,7 +28,6 @@ const feed = new RSS({
 })
 
 items
-  .filter(({ data }) => !data.draft)
   .map(({ file, data }) => ({ file, data, date: toDate(data.date) }))
   .sort((a, b) => b.date - a.date)
   .forEach(({ file, data, date }) =>

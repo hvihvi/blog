@@ -35,7 +35,6 @@ Markdown, plus JSX when needed:
 
 - `.md` and `.mdx` are both compiled as MDX, so a literal `<` or `{` in prose must be escaped (`\<`, `\{`) or put in backticks.
 - Images go in `public/images/` and are referenced as `/images/name.png`.
-- Add `draft: true` to the frontmatter to hide a post.
 
 ## How it works
 
