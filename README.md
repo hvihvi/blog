@@ -1,34 +1,51 @@
-# Portfolio Starter Kit
+# hugovi.net
 
-This portfolio is built with **Next.js** and a library called [Nextra](https://nextra.vercel.app/). It allows you to write Markdown and focus on the _content_ of your portfolio. This starter includes:
+Personal blog / portfolio. React 19 + Vite + MDX, prerendered to static HTML, hosted on Vercel.
 
-- Automatically configured to handle Markdown/MDX
-- Generates an RSS feed based on your posts
-- A beautiful theme included out of the box
-- Easily categorize posts with tags
-- Fast, optimized web font loading
+## Develop
 
-## Configuration
-
-1. Update your name in `theme.config.js` or change the footer.
-1. Update your name and site URL for the RSS feed in `scripts/gen-rss.js`.
-1. Update the meta tags in `pages/_document.js`.
-1. Update the posts inside `pages/posts/*.md` with your own content.
-
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel-solutions/nextjs-portfolio-starter&project-name=portfolio&repository-name=portfolio)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+Requires Node ≥ 22.12.
 
 ```bash
-npx create-next-app --example blog my-blog
-# or
-yarn create next-app --example blog my-blog
+npm install
+npm run dev        # http://localhost:5173, live reload
+npm run build      # production build into dist/ (RSS + prerendered HTML)
+npm run preview    # serve dist/ at http://localhost:4173
+npm run typecheck
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## Write a post
+
+Add a file to `content/posts/`. The filename is the URL: `content/posts/my-post.mdx` → `/posts/my-post`.
+
+```mdx
+---
+title: My post
+date: 2026/11/12
+description: One line shown in the post list and link previews
+tag: css, react
+---
+
+# My post
+
+Markdown, plus JSX when needed:
+
+<div style={{ display: 'flex', gap: 8 }}>...</div>
+```
+
+- `.md` and `.mdx` are both compiled as MDX, so a literal `<` or `{` in prose must be escaped (`\<`, `\{`) or put in backticks.
+- Images go in `public/images/` and are referenced as `/images/name.png`.
+- Add `draft: true` to the frontmatter to hide a post.
+
+## How it works
+
+- `src/posts.ts` loads every post via `import.meta.glob` and sorts them by date.
+- `src/App.tsx` holds the layout and routes; pages live in `src/pages/`.
+- `src/meta.ts` defines each page's `<title>` and share-preview tags.
+- `npm run build` runs `scripts/gen-rss.js` (→ `public/feed.xml`), the Vite client build, an SSR build of `src/entry-server.tsx`, then `scripts/prerender.js`, which writes one HTML file per route plus `404.html`.
+- `api/` holds Vercel Functions (legacy `koober://` deep-link redirects).
+- Styling is plain CSS in `src/styles.css`; design tokens are at the top.
+
+## Deploy
+
+Vercel builds on every push to `main` (config in `vercel.json`). The domain is registered at Name.com and its DNS is managed by Vercel.

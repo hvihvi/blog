@@ -73,6 +73,6 @@ Can modulo head & tail (ring buffer), so that if we overflow at the end we inser
 Translates to "en longueur", we visit all items at each level.
 
 ### Binary Search Trees
-Tree with a rule "this side is >=, this side is <".
+Tree with a rule "this side is `>=`, this side is `<`".
 "find" is O(log(N)) or edge case O(N) if it is not ballanced.
 "insert" is on average O(log(N)), worst case O(N), height grows log compared to total item size (like a square's area) if it's ballanced.
