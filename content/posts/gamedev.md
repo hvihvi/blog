@@ -122,8 +122,14 @@ secondary motion -> ex: celeste hairs -> sells realism, more immersive
 
 FSM with a central "CHOOSE" state (Hub-and-spoke FSM). Go back to CHOOSE after every action ends.
 CHOOSE:
-filter "can do it" (ex: don't jump off a ledge)
+filter "can do it" (ex: don't jump off a ledge, filter out attacks when "is not in area")
 weighted pick (random + weights per action) + avoid repetition logic
 
 + imperative actions (ex: after hitstun > do this attack)
 each attack are telegraph(distinct)>attack>recovery>choose
+
+Detection: "is in area", raycast line of sight with sight memory, terrain detection (floor ahead, ledge ahead, wall...), lead aim `target.pos + target.velocity * t` (can overshoot), spacing footsies & repositioning (too close, sweet spot = attack, too far)
+
+attack cooldowns, reaction to player state + reaction delay for fairness.
+attack tokens -> when there are multiple mobs, don't all attack together
+
